@@ -9,20 +9,10 @@ display:
           action_title: Akce
         subject:
           label: Předmět
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
-        entity_id:
-          separator: ', '
-        changed:
-          separator: ', '
         operations:
           label: Operace
-        name_1:
-          separator: ', '
       pager:
         options:
           expose:
@@ -32,7 +22,6 @@ display:
       exposed_form:
         options:
           submit_button: Filtr
-          reset_button_label: Reset
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně
@@ -54,20 +43,10 @@ display:
           action_title: Akce
         subject:
           label: Předmět
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
-        entity_id:
-          separator: ', '
-        changed:
-          separator: ', '
         operations:
           label: Operace
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:

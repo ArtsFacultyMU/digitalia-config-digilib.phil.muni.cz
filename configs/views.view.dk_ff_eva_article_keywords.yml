@@ -142,7 +142,7 @@ display:
           click_sort_column: target_id
           type: typed_relation_default
           settings:
-            link: false
+            link: 0
           group_column: ''
           group_columns: {  }
           group_rows: false

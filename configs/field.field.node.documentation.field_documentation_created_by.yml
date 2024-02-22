@@ -1,0 +1,19 @@
+uuid: 26254cf8-2c10-45ba-b628-37c1c50b3368
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documentation_created_by
+    - node.type.documentation
+id: node.documentation.field_documentation_created_by
+field_name: field_documentation_created_by
+entity_type: node
+bundle: documentation
+label: 'Created by'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

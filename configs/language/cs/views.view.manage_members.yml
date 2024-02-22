@@ -5,13 +5,11 @@ display:
       fields:
         title:
           label: Nadpis
-          separator: ', '
         operations:
           label: Actions
       exposed_form:
         options:
           submit_button: Hledej
-          reset_button_label: Reset
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně

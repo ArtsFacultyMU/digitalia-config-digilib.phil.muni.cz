@@ -9,20 +9,12 @@ display:
           action_title: Akce
         thumbnail__target_id:
           label: Náhled
-          separator: ', '
-        name:
-          separator: ', '
         bundle:
           label: Typ
-          separator: ', '
         uid:
           label: Autor
-          separator: ', '
         status:
           label: Stav
-          separator: ', '
-        changed:
-          separator: ', '
         operations:
           label: Operace
       pager:
@@ -39,7 +31,6 @@ display:
       exposed_form:
         options:
           submit_button: Filtr
-          reset_button_label: Reset
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně
