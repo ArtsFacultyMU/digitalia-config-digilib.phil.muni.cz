@@ -1,8 +1,0 @@
-uuid: f1d20eef-ec61-4b28-afd3-7dc351c82f36
-langcode: cs
-status: true
-dependencies: {  }
-id: '-test-menu'
-label: '** test menu'
-description: 'Maiin menu summary'
-locked: false

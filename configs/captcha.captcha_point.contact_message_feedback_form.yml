@@ -1,7 +1,0 @@
-uuid: 2147cfe3-2861-4960-9ab9-5ecb2a250ba8
-langcode: en
-status: true
-dependencies: {  }
-formId: contact_message_feedback_form
-captchaType: captcha/Math
-label: contact-message-feedback-form

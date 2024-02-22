@@ -1,8 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        field_publication_year_from:
-          label: Vydáváno
-          alter:
-            text: "{% if field_publication_year_to is not empty %}\r\n{{ field_publication_year_from }}-{{ field_publication_year_to }}\r\n{% else %}\r\n{{ field_publication_year_from }}-dosud\r\n{% endif %}"

@@ -1,6 +1,0 @@
-display:
-  default:
-    display_options:
-      header:
-        area_text_custom:
-          content: '{% if field_keywords is not empty %}<strong>Klíčová slova:</strong>{% endif %}{{ view.total_rows }}'

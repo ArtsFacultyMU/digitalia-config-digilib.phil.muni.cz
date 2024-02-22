@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        nothing:
-          alter:
-            text: "<div id=\"com.citacepro.citace\">&nbsp;</div>\r\n<script src=\"https://www.citacepro.com/citace-v-katalogu.js\"></script>\r\n\r\n<p class=\"citace-com-note\">Upozornění: Tyto citace jsou generovány automaticky. Nemusí být zcela správně podle citačních pravidel.</p>\r\n"

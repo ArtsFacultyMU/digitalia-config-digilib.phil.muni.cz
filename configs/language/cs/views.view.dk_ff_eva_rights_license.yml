@@ -1,6 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        field_rights:
-          label: Licence

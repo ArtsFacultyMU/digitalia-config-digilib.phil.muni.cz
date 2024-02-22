@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        nothing:
-          alter:
-            text: "{% if type == \"book\" %}\r\n    monografií\r\n{% elseif type == \"article\"  %}\r\n    článků\r\n{% elseif type == \"issue\"  %}\r\n    čísel\r\n{% elseif type == \"serial\"  %}\r\n    časopisů\r\n{% endif %}"

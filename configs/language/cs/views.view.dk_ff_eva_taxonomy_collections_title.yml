@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        nothing:
-          alter:
-            text: '<h2>Kolekce</h2>'
