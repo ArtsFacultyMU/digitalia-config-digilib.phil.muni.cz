@@ -1,16 +1,8 @@
 display:
   default:
     display_options:
-      fields:
-        field_media_file:
-          separator: ', '
-        field_media_image:
-          separator: ', '
       pager:
         options:
-          tags:
-            next: ››
-            previous: ‹‹
           expose:
             items_per_page_label: 'Položek na stránku'
             items_per_page_options_all_label: '- Vše -'
@@ -18,7 +10,6 @@ display:
       exposed_form:
         options:
           submit_button: Hledej
-          reset_button_label: Reset
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně

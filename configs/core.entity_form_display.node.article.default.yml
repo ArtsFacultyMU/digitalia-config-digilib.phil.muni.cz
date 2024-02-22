@@ -78,9 +78,9 @@ content:
     region: content
     settings:
       match_operator: STARTS_WITH
-      size: 60
+      match_limit: '0'
+      size: '60'
       placeholder: ''
-      match_limit: 0
     third_party_settings: {  }
   field_department_mu:
     type: multiple_options_select
@@ -148,9 +148,9 @@ content:
     region: content
     settings:
       match_operator: STARTS_WITH
-      size: 60
+      match_limit: '0'
+      size: '60'
       placeholder: ''
-      match_limit: 0
     third_party_settings: {  }
   field_language:
     type: multiple_options_select

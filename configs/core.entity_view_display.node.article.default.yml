@@ -75,7 +75,7 @@ content:
   digitalia_muni_eva_citations_entity_view_1:
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 20
     region: content
   dk_ff_eva_article_issn_entity_view_1:
     settings: {  }
@@ -85,7 +85,7 @@ content:
   dk_ff_eva_article_keywords_entity_view_1:
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 23
     region: content
   dk_ff_eva_author_field_entity_view_1:
     settings: {  }
@@ -102,15 +102,10 @@ content:
     third_party_settings: {  }
     weight: 9
     region: content
-  dk_ff_eva_references_entity_view_1:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 24
-    region: content
   dk_ff_eva_related_documents_entity_view_1:
     settings: {  }
     third_party_settings: {  }
-    weight: 20
+    weight: 22
     region: content
   dk_ff_eva_rights_license_entity_view_1:
     settings: {  }
@@ -171,7 +166,7 @@ content:
         scale: 2
       inline: false
     third_party_settings: {  }
-    weight: 19
+    weight: 21
     region: content
   field_external_content:
     type: link
@@ -183,7 +178,7 @@ content:
       rel: '0'
       target: _blank
     third_party_settings: {  }
-    weight: 23
+    weight: 25
     region: content
   field_language:
     type: entity_reference_label
@@ -214,7 +209,7 @@ content:
         scale: 2
       inline: false
     third_party_settings: {  }
-    weight: 22
+    weight: 24
     region: content
   field_pagination:
     type: double_field_unformatted_list
@@ -314,6 +309,7 @@ hidden:
   dk_ff_eva_link_to_real_entity_view_1: true
   dk_ff_eva_ocr_text_entity_view_1: true
   dk_ff_eva_pdf_extracted_text_entity_view_1: true
+  dk_ff_eva_references_entity_view_1: true
   dk_ff_pdf_media_evas_author_with_pdf_icon_entity_view_1: true
   field_author: true
   field_changed_access: true

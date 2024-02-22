@@ -1,0 +1,29 @@
+uuid: f48bcbe7-236e-44b0-bbcd-8058ddcd36b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model
+    - node.type.documentation
+    - taxonomy.vocabulary.islandora_models
+id: node.documentation.field_model
+field_name: field_model
+entity_type: node
+bundle: documentation
+label: Model
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      islandora_models: islandora_models
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

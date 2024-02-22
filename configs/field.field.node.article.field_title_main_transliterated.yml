@@ -12,7 +12,7 @@ field_name: field_title_main_transliterated
 entity_type: node
 bundle: article
 label: 'Transliterated title'
-description: 'This field should be filled in if the main title starts with a non-Latin character. Used in glossary on Titles page.'
+description: 'This should be filled if the main title starts with non-latin character. Used in glossary on Titles page.'
 required: false
 translatable: false
 default_value: {  }
