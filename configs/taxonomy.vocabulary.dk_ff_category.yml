@@ -1,0 +1,8 @@
+uuid: 37269ff6-ea30-44d3-b7d7-b5a05d966e1f
+langcode: en
+status: true
+dependencies: {  }
+name: 'DK FF: Category'
+vid: dk_ff_category
+description: ''
+weight: 0

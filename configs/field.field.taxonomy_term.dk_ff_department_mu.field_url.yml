@@ -1,0 +1,23 @@
+uuid: c506f5a6-e989-4ed3-88f4-396f03b3554d
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_url
+    - taxonomy.vocabulary.dk_ff_department_mu
+  module:
+    - link
+id: taxonomy_term.dk_ff_department_mu.field_url
+field_name: field_url
+entity_type: taxonomy_term
+bundle: dk_ff_department_mu
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

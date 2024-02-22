@@ -1,0 +1,6 @@
+label: Popis
+settings:
+  second:
+    allowed_values:
+      -
+        label: Česky

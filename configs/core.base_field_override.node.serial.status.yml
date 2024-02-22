@@ -1,0 +1,22 @@
+uuid: 4b71a3f7-bce8-43ac-a5d5-262384c631f5
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.serial
+id: node.serial.status
+field_name: status
+entity_type: node
+bundle: serial
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,258 @@
+uuid: 54495c3d-4dcb-4cc9-b812-ee48a3c7b775
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.serial.field_category
+    - field.field.node.serial.field_department
+    - field.field.node.serial.field_department_mu
+    - field.field.node.serial.field_description
+    - field.field.node.serial.field_doi_registrant
+    - field.field.node.serial.field_handle
+    - field.field.node.serial.field_home_url
+    - field.field.node.serial.field_issn
+    - field.field.node.serial.field_language
+    - field.field.node.serial.field_member_of
+    - field.field.node.serial.field_model
+    - field.field.node.serial.field_moving_wall
+    - field.field.node.serial.field_next_series
+    - field.field.node.serial.field_note
+    - field.field.node.serial.field_path
+    - field.field.node.serial.field_periodicity
+    - field.field.node.serial.field_previous_series
+    - field.field.node.serial.field_publication_year_from
+    - field.field.node.serial.field_publication_year_to
+    - field.field.node.serial.field_publisher
+    - field.field.node.serial.field_rights
+    - field.field.node.serial.field_rights_holder
+    - field.field.node.serial.field_serial_type
+    - field.field.node.serial.field_series
+    - field.field.node.serial.field_title_main
+    - field.field.node.serial.field_title_sort
+    - field.field.node.serial.field_titles
+    - field.field.node.serial.field_topic
+    - field.field.node.serial.field_variant_title
+    - node.type.serial
+  module:
+    - double_field
+    - link
+    - options
+    - user
+id: node.serial.search_index
+targetEntityType: node
+bundle: serial
+mode: search_index
+content:
+  dk_ff_eva_identifiers_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  dk_ff_eva_link_to_real_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  dk_ff_eva_next_and_previous_series_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  dk_ff_eva_next_and_previous_series_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  dk_ff_eva_publication_years_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  dk_ff_eva_title_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  dk_ff_serial_volumes_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  dk_ff_serial_volumes_entity_view_1_form:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_department_mu:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_description:
+    type: double_field_unformatted_list
+    label: hidden
+    settings:
+      first:
+        format_type: medium
+        link: false
+        hidden: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      second:
+        format_type: medium
+        link: false
+        hidden: true
+        key: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      inline: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_handle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_home_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_issn:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_next_series:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_note:
+    type: double_field_unformatted_list
+    label: hidden
+    settings:
+      first:
+        format_type: medium
+        link: false
+        hidden: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      second:
+        format_type: medium
+        link: false
+        hidden: true
+        key: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      inline: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_previous_series:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_publication_year_from:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_publication_year_to:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_publisher:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_serial_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_topic:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+hidden:
+  display_media_entity_view_1: true
+  display_media_entity_view_2: true
+  display_media_service_file: true
+  display_media_thumbnail: true
+  dk_ff_issues_in_journal_entity_view_1: true
+  dk_ff_issues_in_journal_entity_view_1_form: true
+  dk_ff_media_evas_entity_view_1: true
+  field_category: true
+  field_department: true
+  field_doi_registrant: true
+  field_language: true
+  field_member_of: true
+  field_model: true
+  field_moving_wall: true
+  field_path: true
+  field_periodicity: true
+  field_rights: true
+  field_rights_holder: true
+  field_series: true
+  field_title_main: true
+  field_title_sort: true
+  field_titles: true
+  field_variant_title: true
+  islandora_fits_checksum: true
+  langcode: true
+  links: true
+  openseadragon_media_evas_entity_view_1: true
+  openseadragon_media_evas_entity_view_2: true
+  openseadragon_media_evas_service_file: true
+  pdfjs_media_evas_entity_view_1: true
+  pdfjs_media_evas_entity_view_2: true
+  pdfjs_media_evas_service_file: true
+  published_at: true
+  search_api_excerpt: true

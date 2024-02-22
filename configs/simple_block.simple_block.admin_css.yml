@@ -1,0 +1,11 @@
+uuid: c7aac11d-4ca9-4385-8919-d1b93e83e7bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: admin_css
+title: 'Admin CSS'
+content:
+  value: "<script>\r\nnodeList = document.querySelectorAll('.form-textarea, .form-text, .form-url, .form-number, .form-date');\r\nfor (let i = 0; i < nodeList.length; i++) {\r\n  nodeList[i].style.backgroundColor = \"white\";\r\n  nodeList[i].style.color = \"black\";\r\n  nodeList[i].style.resize = \"both\";\r\n}\r\n\r\nlinkpdfnode = document.querySelector('div.view-dk-ff-edit-form-pdf-link a');\r\npdflink = linkpdfnode.getAttribute(\"href\");\r\nlinkpdfnode.removeAttribute(\"href\");\r\nlinkpdfnode.style.cursor = \"pointer\";\r\nlinkpdfnode.setAttribute('onclick', \"window.open('\" + pdflink + \"', 'PDF', 'width=1280,height=960')\");\r\n</script>"
+  format: full_html

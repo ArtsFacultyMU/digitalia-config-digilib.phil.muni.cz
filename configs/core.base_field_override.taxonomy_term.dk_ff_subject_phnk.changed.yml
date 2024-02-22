@@ -1,0 +1,18 @@
+uuid: aec7fdf3-ba27-405c-9651-58c9acafead8
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_subject_phnk
+id: taxonomy_term.dk_ff_subject_phnk.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: dk_ff_subject_phnk
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

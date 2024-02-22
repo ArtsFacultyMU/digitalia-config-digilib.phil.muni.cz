@@ -1,0 +1,55 @@
+uuid: f0907685-59ea-461f-96f8-6ff9954eaa03
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type
+  module:
+    - context
+    - facets
+    - islandora
+  theme:
+    - islandora_muni
+id: islandora_muni_contenttype
+theme: islandora_muni
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'facet_block:content_type'
+settings:
+  id: 'facet_block:content_type'
+  label: 'Document type'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: islandora_muni_contenttype
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-dk_ff_search_page-page_1: view-dk_ff_search_page-page_1
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

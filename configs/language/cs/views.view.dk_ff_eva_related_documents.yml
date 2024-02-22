@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_related_document:
+          label: 'Související dokumenty'
+          alter:
+            path: '/cs/node/{{ field_related_document__target_id }}'

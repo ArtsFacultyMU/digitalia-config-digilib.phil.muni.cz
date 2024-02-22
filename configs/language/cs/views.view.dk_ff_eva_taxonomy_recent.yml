@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h3>[view:title]</h3>\r\n"
+            format: basic_html
+      pager:
+        options:
+          tags:
+            first: '« První'
+            last: 'Poslední »'
+      fields:
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        title:
+          alter:
+            text: '<a href="/cs/node/{{ nid }}">{{ title }}</a>. '
+        nothing:
+          alter:
+            text: "{% if type_1|striptags == 'serial' %}\r\n  <em>{{ title }}</em>{{ field_publication_year_from }}–{{ field_publication_year_to }}\r\n{% elseif type_1|striptags == 'article' %}\r\n  {{ nothing_2 }}{{ title }}<em>{{ field_member_of_1 }}</em>{{ aggregated_field_published }}\r\n{% elseif type_1|striptags == 'book' %}\r\n  {{ nothing_2 }}<em>{{ title }}</em>{{ field_publication_year_text }}\r\n{% elseif type_1|striptags == 'chapter' %}\r\n  {{ nothing_2 }}{{ title }}{{ nothing_1 }}{{ field_publication_year_text_1 }}\r\n{% elseif type_1|striptags == 'book_series' %}\r\n  <em>{{ title }}</em>{{ field_publication_year_from }}–{{ field_publication_year_to }}\r\n{% elseif type_1|striptags == 'issue' %}\r\n  {{ field_member_of_1_1 }}, {{ aggregated_field_published }}, roč. {{ field_member_of_2 }}, číslo {{ title }}\r\n{% endif %}"
+  entity_view_1:
+    display_options:
+      title: Nejnovější
+  entity_view_2:
+    display_options:
+      title: Nejnovější
+  entity_view_3:
+    display_options:
+      title: Nejnovější

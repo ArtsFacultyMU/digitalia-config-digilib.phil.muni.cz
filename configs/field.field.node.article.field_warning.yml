@@ -1,0 +1,19 @@
+uuid: f73a40f6-ef8d-41a1-a9f4-1722b543c909
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_warning
+    - node.type.article
+id: node.article.field_warning
+field_name: field_warning
+entity_type: node
+bundle: article
+label: Warning
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

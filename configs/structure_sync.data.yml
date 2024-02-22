@@ -1,0 +1,157 @@
+menus:
+  -
+    menu_name: '-test-menu'
+    title: Domů
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: cs
+    uuid: f9d40e85-d2de-4db3-b469-fc5bc5dbc2f3
+  -
+    menu_name: '-test-menu'
+    title: Kolekce
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: cs
+    uuid: 798ab8ea-7ee2-40eb-b0fe-cdad4ca86efd
+  -
+    menu_name: '-test-menu'
+    title: Prohlížení
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: cs
+    uuid: 381a7b24-6fda-44ef-89c2-edc2650fae81
+  -
+    menu_name: '-test-menu'
+    title: Časopisy
+    parent: 'menu_link_content:798ab8ea-7ee2-40eb-b0fe-cdad4ca86efd'
+    uri: 'internal:/collections#journals'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: cs
+    uuid: f32ed57f-793c-47db-93b1-04ba4a3f6e90
+  -
+    menu_name: '-test-menu'
+    title: 'Sborník prací Filozofické fakulty brněnské univerzity'
+    parent: 'menu_link_content:798ab8ea-7ee2-40eb-b0fe-cdad4ca86efd'
+    uri: 'internal:/collections#spffbu'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: cs
+    uuid: fd0f7d86-ac44-43a1-a5f6-90611bfc29fe
+  -
+    menu_name: '-test-menu'
+    title: 'Všeobecné knižní edice'
+    parent: 'menu_link_content:798ab8ea-7ee2-40eb-b0fe-cdad4ca86efd'
+    uri: 'internal:/collections#general'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: cs
+    uuid: cc784700-38c1-4b68-87e9-40d24d70a17f
+  -
+    menu_name: '-test-menu'
+    title: 'Specializované knižní edice'
+    parent: 'menu_link_content:798ab8ea-7ee2-40eb-b0fe-cdad4ca86efd'
+    uri: 'internal:/collections#specialized'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: cs
+    uuid: cb01dce2-b39d-41b5-91fd-1f3c41f81f72
+  -
+    menu_name: '-test-menu'
+    title: 'Knihy mimo edice'
+    parent: 'menu_link_content:798ab8ea-7ee2-40eb-b0fe-cdad4ca86efd'
+    uri: 'internal:/collections#single'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -46
+    langcode: cs
+    uuid: 5b99de1e-7905-4688-8653-3f747451621f
+  -
+    menu_name: '-test-menu'
+    title: Nápověda
+    parent: null
+    uri: 'internal:/help'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -43
+    langcode: cs
+    uuid: d2d9c547-b905-4c44-8c6b-4857303636e8
+  -
+    menu_name: '-test-menu'
+    title: Kontakt
+    parent: null
+    uri: 'internal:/contact'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -42
+    langcode: cs
+    uuid: a9e1aa99-cfdc-43d5-a5f1-a694116f35e1
+  -
+    menu_name: '-test-menu'
+    title: Digitalia
+    parent: null
+    uri: 'https://digitalia.phil.muni.cz/'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -41
+    langcode: cs
+    uuid: 259369af-12b1-44c2-8447-7b8b13f7c602
+  -
+    menu_name: '-test-menu'
+    title: 'O platformě'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -44
+    langcode: cs
+    uuid: 4acba414-2d3e-4c53-abb1-6009a5e69a20
+  -
+    menu_name: '-test-menu'
+    title: 'Základní informace'
+    parent: 'menu_link_content:4acba414-2d3e-4c53-abb1-6009a5e69a20'
+    uri: 'internal:/about'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: cs
+    uuid: be08eff4-59d7-4c00-ac0f-85eedae055ac

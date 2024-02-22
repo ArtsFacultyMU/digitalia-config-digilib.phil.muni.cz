@@ -1,0 +1,19 @@
+uuid: 60e5a947-3aba-4325-987e-eb34fb3e770f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_note
+    - node.type.author
+id: node.author.field_author_note
+field_name: field_author_note
+entity_type: node
+bundle: author
+label: Note
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

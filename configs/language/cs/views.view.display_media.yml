@@ -1,0 +1,18 @@
+display:
+  default:
+    display_title: Nadřízené
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Hledej
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      arguments:
+        field_media_of_target_id:
+          exception:
+            title: Vše
+  thumbnail:
+    display_title: Náhled
+    display_options:
+      title: Náhled

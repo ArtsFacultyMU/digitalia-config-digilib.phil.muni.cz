@@ -1,0 +1,213 @@
+uuid: 42b4cee6-adc4-436b-973f-14b0b793dc03
+langcode: en
+status: true
+dependencies: {  }
+id: node_book_series
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_content
+label: 'Import nodes: Book Series'
+source:
+  plugin: csv
+  delimiter: "\t"
+  path: migrate/book_series.csv
+  header_row_count: 1
+  ids:
+    - handle_id
+  constants:
+    uid: 1
+    cs: cs
+process:
+  langcode: constants/cs
+  status: constants/uid
+  uid: constants/uid
+  field_handle: handle_id
+  title_lang:
+    plugin: explode
+    delimiter: §+§
+    source: Title§+§lang
+  title:
+    plugin: extract
+    index:
+      - 0
+    source: '@title_lang'
+  language:
+    plugin: extract
+    index:
+      - 1
+    source: '@title_lang'
+  field_language:
+    plugin: entity_lookup
+    source: '@language'
+    entity_type: taxonomy_term
+    value_key: field_code
+    bundle_key: vid
+    bundle: language
+  field_publisher:
+    plugin: explode
+    delimiter: §|§
+    source: Publisher
+  field_moving_wall: MovingWall
+  field_category:
+    plugin: entity_generate
+    source: Category
+    entity_type: taxonomy_term
+    value_key: name
+    bundle_key: vid
+    bundle: dk_ff_category
+  field_publication_year_from: PublicationStart
+  field_publication_year_to: PublicationEnd
+  field_warning:
+    plugin: explode
+    delimiter: §|§
+    source: Warning
+  notes:
+    -
+      source: Note§+§lang
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: explode
+      delimiter: §|§
+    -
+      plugin: str_to_assoc
+      key: note
+  field_note:
+    plugin: sub_process
+    source: '@notes'
+    process:
+      exploded:
+        plugin: explode
+        delimiter: §+§
+        source: note
+      first:
+        plugin: extract
+        index:
+          - 0
+        source: '@exploded'
+      second:
+        plugin: extract
+        index:
+          - 1
+        source: '@exploded'
+  field_issn:
+    plugin: explode
+    delimiter: §|§
+    source: ISSN
+  variant_titles:
+    -
+      source: TitleVariant§+§lang
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: explode
+      delimiter: §|§
+    -
+      plugin: str_to_assoc
+      key: title
+  field_variant_title:
+    plugin: sub_process
+    source: '@variant_titles'
+    process:
+      exploded:
+        plugin: explode
+        delimiter: §+§
+        source: title
+      first:
+        plugin: extract
+        index:
+          - 0
+        source: '@exploded'
+      second:
+        plugin: extract
+        index:
+          - 1
+        source: '@exploded'
+  field_title_main/first:
+    -
+      plugin: explode
+      source: Title§+§lang
+      delimiter: §+§
+    -
+      plugin: extract
+      index:
+        - 0
+  field_title_main/second:
+    -
+      plugin: explode
+      source: Title§+§lang
+      delimiter: §+§
+    -
+      plugin: extract
+      index:
+        - 1
+      default: ''
+  field_path:
+    plugin: str_replace
+    source: path
+    search: /detail.xml
+    replace: ''
+  descriptions:
+    -
+      source: Description§+§lang
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: explode
+      delimiter: §|§
+    -
+      plugin: str_to_assoc
+      key: desc
+  field_description:
+    plugin: sub_process
+    source: '@descriptions'
+    process:
+      exploded:
+        plugin: explode
+        delimiter: §+§
+        source: desc
+      first:
+        plugin: extract
+        index:
+          - 0
+        source: '@exploded'
+      second:
+        plugin: extract
+        index:
+          - 1
+        source: '@exploded'
+  field_topic:
+    -
+      plugin: explode
+      delimiter: §|§
+      source: topic
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      value_key: field_id
+      bundle_key: vid
+      bundle: dk_ff_topic
+  field_department_mu:
+    -
+      plugin: explode
+      delimiter: §|§
+      source: department
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      value_key: field_id
+      bundle_key: vid
+      bundle: dk_ff_department_mu
+  field_section:
+    plugin: entity_generate
+    source: section
+    entity_type: taxonomy_term
+    value_key: name
+    bundle_key: vid
+    bundle: dk_ff_section
+destination:
+  plugin: 'entity:node'
+  default_bundle: book_series
+migration_dependencies: null

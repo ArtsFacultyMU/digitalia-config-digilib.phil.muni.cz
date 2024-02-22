@@ -1,0 +1,21 @@
+uuid: 0fbba892-c8fd-4357-840c-126ce923d1ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embargo_end_date
+    - node.type.article
+  module:
+    - datetime
+id: node.article.field_embargo_end_date
+field_name: field_embargo_end_date
+entity_type: node
+bundle: article
+label: 'Embargo end date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

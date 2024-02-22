@@ -1,0 +1,24 @@
+uuid: 98045f07-02df-4a14-b1a0-fa8ff833d7e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_documentation_date_pub
+field_name: field_documentation_date_pub
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 0d300c3f-252e-4689-aa4b-f3d56e3a18a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bibtype
+    - node.type.issue
+  module:
+    - options
+id: node.issue.field_bibtype
+field_name: field_bibtype
+entity_type: node
+bundle: issue
+label: BibType
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,11 @@
+uuid: b69bb324-ffaf-422a-a79a-8e69f8989dc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: basic_search_help
+title: 'Basic search help'
+content:
+  value: "<p><strong>Help:</strong> When entering keywords from the full text of a document, keep in mind that the database contains multilingual documents.</p>\r\n"
+  format: basic_html

@@ -1,0 +1,18 @@
+uuid: cbe68ffb-31ba-4933-95c7-10dea224e842
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_category
+id: taxonomy_term.dk_ff_category.name
+field_name: name
+entity_type: taxonomy_term
+bundle: dk_ff_category
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

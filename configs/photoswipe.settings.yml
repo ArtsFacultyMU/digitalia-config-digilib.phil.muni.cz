@@ -1,0 +1,39 @@
+_core:
+  default_config_hash: V8V4qoFWUmhf9Atc_VX3qfO2bgt4z7cF4YCm7hlVdeY
+photoswipe_always_load_non_admin: false
+enable_cdn: false
+options:
+  showAnimationDuration: 333
+  hideAnimationDuration: 333
+  zoomAnimationDuration: 333
+  maxWidthToAnimate: 4000
+  easing: 'cubic-bezier(.4,0,.22,1)'
+  bgOpacity: 0.75
+  spacing: 0.12
+  maxZoomLevel: !!float 4
+  allowPanToNext: true
+  loop: true
+  pinchToClose: true
+  clickToCloseNonZoomable: true
+  closeOnVerticalDrag: true
+  returnFocus: true
+  escKey: true
+  arrowKeys: true
+  imageClickAction: zoom-or-close
+  tapAction: toggle-controls
+  doubleTapAction: zoom
+  bgClickAction: close
+  indexIndicatorSep: ' / '
+  errorMsg: 'The image could not be loaded.'
+  preload:
+    - 1
+    - 1
+  preloaderDelay: 2000
+  mainClass: null
+  showHideOpacity: false
+  maxSpreadZoom: 1
+  closeOnScroll: false
+  mouseUsed: false
+  history: true
+  focus: true
+maxZoomLevel: null

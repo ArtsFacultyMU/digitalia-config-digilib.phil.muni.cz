@@ -1,0 +1,27 @@
+uuid: cf52c6be-dbf2-4fa1-bf30-d5212f6fc6b4
+langcode: en
+status: true
+dependencies: {  }
+id: term_language
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_content
+label: 'Import terms: Language'
+source:
+  plugin: csv
+  path: migrate/languages.csv
+  delimiter: "\t"
+  header_row_count: 1
+  ids:
+    - key
+  constants:
+    vid: language
+process:
+  name: label
+  vid: constants/vid
+  field_code: key
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: null

@@ -1,0 +1,29 @@
+uuid: ed069c0f-ac9b-4c46-849e-ae3a76e633a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_department_mu
+    - taxonomy.vocabulary.dk_ff_department_mu
+    - taxonomy.vocabulary.dk_ff_topic
+id: taxonomy_term.dk_ff_topic.field_department_mu
+field_name: field_department_mu
+entity_type: taxonomy_term
+bundle: dk_ff_topic
+label: 'Department FF MU'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dk_ff_department_mu: dk_ff_department_mu
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

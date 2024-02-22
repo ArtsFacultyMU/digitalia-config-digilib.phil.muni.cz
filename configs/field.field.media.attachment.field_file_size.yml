@@ -1,0 +1,23 @@
+uuid: 02adf402-4efa-4810-9760-0fbd16e4bd9d
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_size
+    - media.type.attachment
+id: media.attachment.field_file_size
+field_name: field_file_size
+entity_type: media
+bundle: attachment
+label: 'File size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

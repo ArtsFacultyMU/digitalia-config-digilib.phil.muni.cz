@@ -1,0 +1,37 @@
+uuid: 608cb6e0-2c23-4263-848a-6c95eaa2e417
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contributor
+    - node.type.chapter
+  module:
+    - controlled_access_terms
+id: node.chapter.field_contributor
+field_name: field_contributor
+entity_type: node
+bundle: chapter
+label: Contributor
+description: '<a href="/en/node/add/author_name" target="_blank">Create new author</a>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: dk_ff_contributor_entity_reference_view
+      display_name: entity_reference_1
+      arguments: {  }
+  rel_types:
+    editor: Editor
+    translator: Translator
+    illustrator: Illustrator
+    photographer: Photographer
+    author-of-introduction: 'Author of Introduction'
+    author-of-afterword: 'Author of Afterword'
+    author-of-bibliography: 'Author of Bibliography'
+    translator-of-summary: 'Translator of Summary'
+    other: Other
+field_type: typed_relation

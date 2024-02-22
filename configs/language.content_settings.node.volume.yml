@@ -1,0 +1,18 @@
+uuid: 8f5c7776-7d70-470a-898b-32591c0c73d4
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.volume
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.volume
+target_entity_type_id: node
+target_bundle: volume
+default_langcode: cs
+language_alterable: false

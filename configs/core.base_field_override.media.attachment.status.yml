@@ -1,0 +1,22 @@
+uuid: 53ac7638-aec5-40f4-afa5-c411ec85e392
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.attachment
+id: media.attachment.status
+field_name: status
+entity_type: media
+bundle: attachment
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 21f141b5-55d1-495f-a2e2-3c1826235927
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.serial
+id: node.serial.sticky
+field_name: sticky
+entity_type: node
+bundle: serial
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

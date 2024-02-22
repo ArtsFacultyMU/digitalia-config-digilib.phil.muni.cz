@@ -1,0 +1,19 @@
+uuid: 802df155-787a-49c2-b4ad-63ed39994268
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rights_holder
+    - node.type.article
+id: node.article.field_rights_holder
+field_name: field_rights_holder
+entity_type: node
+bundle: article
+label: 'Rights holder'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

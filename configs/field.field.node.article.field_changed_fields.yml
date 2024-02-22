@@ -1,0 +1,19 @@
+uuid: 15b9f488-67a0-4a22-9541-aacc517891ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_changed_fields
+    - node.type.article
+id: node.article.field_changed_fields
+field_name: field_changed_fields
+entity_type: node
+bundle: article
+label: 'Changed fields'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

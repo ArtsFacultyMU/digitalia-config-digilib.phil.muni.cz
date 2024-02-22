@@ -1,0 +1,23 @@
+uuid: e0100692-4452-47c5-b786-6ff594968d29
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_parts_field
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_parts
+field_name: field_parts
+entity_type: node
+type: digitalia_muni_parts_field_parts
+settings: {  }
+module: digitalia_muni_parts_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

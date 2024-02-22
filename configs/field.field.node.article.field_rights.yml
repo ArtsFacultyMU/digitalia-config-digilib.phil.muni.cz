@@ -1,0 +1,29 @@
+uuid: faf2c1fa-3aca-4742-b205-b855ea95389b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rights
+    - node.type.article
+    - taxonomy.vocabulary.dk_ff_rights
+id: node.article.field_rights
+field_name: field_rights
+entity_type: node
+bundle: article
+label: 'Rights License'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dk_ff_rights: dk_ff_rights
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

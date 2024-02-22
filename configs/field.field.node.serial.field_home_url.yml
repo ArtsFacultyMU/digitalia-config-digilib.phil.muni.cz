@@ -1,0 +1,23 @@
+uuid: ebbb02e8-6ed8-49bc-8a67-dc0d37ca9598
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_url
+    - node.type.serial
+  module:
+    - link
+id: node.serial.field_home_url
+field_name: field_home_url
+entity_type: node
+bundle: serial
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

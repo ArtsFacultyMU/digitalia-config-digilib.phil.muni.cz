@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: dYNtbv_I4UNViB5gwi8A_2885o7cOwb2ouL8yYbmv5M
+options:
+  type: auto
+  mobileLayoutBreakpoint: 600
+  horizontalEdgeThreshold: 20
+  mobileCaptionOverlapRatio: 0.3
+  verticallyCenterImage: false

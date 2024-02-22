@@ -1,0 +1,54 @@
+uuid: 1df49694-b980-4d40-8ced-7a0180c46fe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.dk_ff_search_page
+  module:
+    - context
+    - islandora
+    - system
+    - views
+  theme:
+    - islandora_muni
+id: exposedformdk_ff_search_pagepage_2
+theme: islandora_muni
+region: header
+weight: -24
+provider: null
+plugin: 'views_exposed_filter_block:dk_ff_search_page-page_2'
+settings:
+  id: 'views_exposed_filter_block:dk_ff_search_page-page_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/en/advanced-search\r\n/cs/advanced-search\r\n/advanced-search"

@@ -1,0 +1,19 @@
+uuid: 2d851ffc-11bd-42ff-830a-119d06f5f57a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_handle
+    - node.type.issue
+id: node.issue.field_handle
+field_name: field_handle
+entity_type: node
+bundle: issue
+label: 'Persistent identifier (handle)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

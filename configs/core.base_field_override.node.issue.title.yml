@@ -1,0 +1,18 @@
+uuid: 2dd235f4-84ff-42d1-a3d6-1f315ff3601c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.issue
+id: node.issue.title
+field_name: title
+entity_type: node
+bundle: issue
+label: 'Issue name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 34060eef-d3aa-44c4-ab9f-e49791b73033
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_sort
+    - node.type.serial
+id: node.serial.field_title_sort
+field_name: field_title_sort
+entity_type: node
+bundle: serial
+label: 'Sorting title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

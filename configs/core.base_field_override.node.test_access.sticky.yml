@@ -1,0 +1,22 @@
+uuid: 19e4e371-7138-4125-afd2-44e089afc31d
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.test_access
+id: node.test_access.sticky
+field_name: sticky
+entity_type: node
+bundle: test_access
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

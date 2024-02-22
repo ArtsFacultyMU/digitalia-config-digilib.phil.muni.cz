@@ -1,0 +1,48 @@
+uuid: a48ca2be-f7f4-4fb9-99b2-f8f150c35bbe
+langcode: en
+status: true
+dependencies: {  }
+id: media_ocr_fulltext
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_media
+label: 'media ocr-fulltext.txt'
+source:
+  plugin: csv
+  path: migrate/files/ocr-fulltext.txt.csv
+  delimiter: "\t"
+  header_row_count: 1
+  ids:
+    - handle
+  constants:
+    uid: 1
+    ext: '-ocr-fulltext.txt'
+process:
+  name:
+    plugin: concat
+    source:
+      - handle
+      - constants/ext
+  filename:
+    plugin: concat
+    source:
+      - handle
+      - constants/ext
+  uid: constants/uid
+  field_media_file:
+    plugin: entity_lookup
+    source: '@filename'
+    entity_type: file
+    value_key: filename
+    bundle: file
+  field_media_of:
+    plugin: entity_lookup
+    source: handle
+    entity_type: node
+    value_key: field_handle
+destination:
+  plugin: 'entity:media'
+  default_bundle: extracted_text
+migration_dependencies: null

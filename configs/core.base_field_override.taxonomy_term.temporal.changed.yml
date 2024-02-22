@@ -1,0 +1,18 @@
+uuid: b0196372-076b-48c4-85f9-16ba4481a7d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.temporal
+id: taxonomy_term.temporal.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: temporal
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

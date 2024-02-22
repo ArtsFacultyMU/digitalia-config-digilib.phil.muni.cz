@@ -1,0 +1,18 @@
+uuid: cb73358d-5abf-4581-9751-83e931bfd699
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_department
+id: taxonomy_term.dk_ff_department.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: dk_ff_department
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,53 @@
+uuid: 8aec8559-fbac-4754-97c4-27a2980be707
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.how_to_cite_platform
+  module:
+    - context
+    - islandora
+    - simple_block
+    - system
+  theme:
+    - islandora_muni
+id: howtociteplatform
+theme: islandora_muni
+region: content
+weight: 0
+provider: null
+plugin: 'simple_block:how_to_cite_platform'
+settings:
+  id: 'simple_block:how_to_cite_platform'
+  label: 'How to cite platform'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

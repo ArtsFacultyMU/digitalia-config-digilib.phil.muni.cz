@@ -1,0 +1,18 @@
+uuid: 61f438b9-336b-4eef-9a71-9dfbb655c445
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.ebook
+id: media.ebook.changed
+field_name: changed
+entity_type: media
+bundle: ebook
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

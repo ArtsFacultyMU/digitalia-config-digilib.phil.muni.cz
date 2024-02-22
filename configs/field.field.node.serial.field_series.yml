@@ -1,0 +1,21 @@
+uuid: 077b0ab5-0497-4164-95c7-8d481a9d3bc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_series
+    - node.type.serial
+  module:
+    - dkff_triple_field
+id: node.serial.field_series
+field_name: field_series
+entity_type: node
+bundle: serial
+label: Series
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: dkff_triple_field_triple_field

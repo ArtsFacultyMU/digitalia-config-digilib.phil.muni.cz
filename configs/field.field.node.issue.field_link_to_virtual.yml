@@ -1,0 +1,32 @@
+uuid: 3f7cb0c6-1cc7-4be7-9dbe-80b52576b3bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_to_virtual
+    - node.type.book
+    - node.type.chapter
+    - node.type.issue
+id: node.issue.field_link_to_virtual
+field_name: field_link_to_virtual
+entity_type: node
+bundle: issue
+label: 'Link to virtual'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      book: book
+      chapter: chapter
+      issue: issue
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: book
+field_type: entity_reference

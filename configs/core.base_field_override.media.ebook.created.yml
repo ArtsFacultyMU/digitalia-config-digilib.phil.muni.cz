@@ -1,0 +1,18 @@
+uuid: e00e62eb-b972-42e5-9fda-8b5bfe0e7646
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.ebook
+id: media.ebook.created
+field_name: created
+entity_type: media
+bundle: ebook
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

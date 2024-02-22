@@ -1,0 +1,9 @@
+settings:
+  rel_types:
+    'relators:aut': Autor
+    'relators:edt': editor
+    'relators:ill': ilustrátor
+    'relators:oth': 'jiná role'
+    'relators:pht': fotograf
+    'relators:prv': Poskytovatel
+    'relators:trl': překladatel

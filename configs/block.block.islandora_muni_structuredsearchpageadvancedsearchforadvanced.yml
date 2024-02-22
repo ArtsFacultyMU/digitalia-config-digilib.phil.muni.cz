@@ -1,0 +1,71 @@
+uuid: fb7291fb-421c-471d-b415-7b6860321ff4
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - islandora
+  theme:
+    - islandora_muni
+id: islandora_muni_structuredsearchpageadvancedsearchforadvanced
+theme: islandora_muni
+region: breadcrumb
+weight: -22
+provider: null
+plugin: 'islandora_advanced_search_block:dk_ff_structured_search_page__page_2'
+settings:
+  id: 'islandora_advanced_search_block:dk_ff_structured_search_page__page_2'
+  label: ' Structured search page: Advanced Search for Advanced'
+  label_display: '0'
+  provider: islandora_advanced_search
+  fields:
+    - rendered_item_all
+    - rendered_item_fulltext
+    - rendered_item_metadata
+    - aggregated_field_author
+    - title_1
+    - title
+    - domain_name
+    - field_topic_name
+    - name
+    - aggregated_field_subject
+    - aggregated_field_subject_headings
+    - keywords_name
+    - abstract
+    - field_references
+    - type
+    - language_name
+    - aggregated_field_published
+    - aggregated_field_published_to
+    - aggregated_field_issn_isbn
+  context_filter: null
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-dk_ff_structured_search_page-page_2: view-dk_ff_structured_search_page-page_2

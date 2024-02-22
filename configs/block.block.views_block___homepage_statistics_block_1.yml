@@ -1,0 +1,55 @@
+uuid: 7832daa1-11a1-4549-ae42-554055b59d54
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view._homepage_statistics
+  module:
+    - context
+    - islandora
+    - system
+    - views
+  theme:
+    - islandora_muni
+id: views_block___homepage_statistics_block_1
+theme: islandora_muni
+region: content
+weight: -26
+provider: null
+plugin: 'views_block:_homepage_statistics-block_1'
+settings:
+  id: 'views_block:_homepage_statistics-block_1'
+  label: Statistiky
+  label_display: visible
+  provider: views
+  views_label: Statistiky
+  items_per_page: none
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/test/homepage_view\r\n/node"

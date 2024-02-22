@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        vid:
+          alter:
+            text: "{% if vid == 'dk_ff_topic' %}\r\n  <strong class=\"taxonomy_group_label\">Obory</strong>\r\n{% else %}\r\n  <strong class=\"taxonomy_group_label\">Ústavy FF MU</strong>\r\n{% endif %}"

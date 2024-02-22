@@ -1,0 +1,35 @@
+display:
+  default:
+    display_title: Výchozí
+    display_options:
+      fields:
+        nothing:
+          admin_label: Ikona
+        type:
+          label: Typ
+        timestamp:
+          label: Datum
+        message:
+          label: Zpráva
+        name:
+          label: Uživatel
+        link:
+          label: Operace
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+      exposed_form:
+        options:
+          submit_button: Filtr
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      filters:
+        type:
+          expose:
+            label: Typ
+  page:
+    display_title: Stránka

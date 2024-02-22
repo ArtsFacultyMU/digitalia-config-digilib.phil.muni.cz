@@ -1,0 +1,49 @@
+uuid: d1b48e35-5254-4ffc-8b8c-96935d01e4b1
+langcode: en
+status: true
+dependencies: {  }
+id: attachments
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_files
+label: 'file attachments.zip'
+source:
+  plugin: csv
+  path: migrate/files/attachments.zip.csv
+  delimiter: "\t"
+  header_row_count: 1
+  ids:
+    - handle
+  constants:
+    destination_dir: 'fedora://attachments'
+    source_dir: /var/www/html/drupal/web/migrate/data
+    ext: '-attachments.zip'
+process:
+  filename:
+    plugin: concat
+    source:
+      - handle
+      - constants/ext
+  destination:
+    plugin: concat
+    delimiter: /
+    source:
+      - constants/destination_dir
+      - '@filename'
+  source:
+    plugin: concat
+    delimiter: /
+    source:
+      - constants/source_dir
+      - filepath
+  uri:
+    plugin: file_copy
+    source:
+      - '@source'
+      - '@destination'
+destination:
+  plugin: 'entity:file'
+  type: file
+migration_dependencies: null

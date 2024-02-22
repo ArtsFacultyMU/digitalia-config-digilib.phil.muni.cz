@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: '{% if type != ''issue'' and type != ''book'' %}<span>Plný text nepřístupný</span> | <a target=_blank href=/cs/contact/?edit[subject][widget][0][value]=--%20Item%20{{ field_handle }}%20-->Feedback</a>{% endif %} '

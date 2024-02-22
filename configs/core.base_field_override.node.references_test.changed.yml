@@ -1,0 +1,18 @@
+uuid: fc6e0c8b-c67b-4a4a-96d1-b0c4965c2c01
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.references_test
+id: node.references_test.changed
+field_name: changed
+entity_type: node
+bundle: references_test
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

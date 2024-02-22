@@ -1,0 +1,20 @@
+uuid: 9efbfa4d-d0b4-4395-be77-34e4fe6c74d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.islandora_object
+  module:
+    - publication_date
+id: node.islandora_object.published_at
+field_name: published_at
+entity_type: node
+bundle: islandora_object
+label: 'Published on'
+description: 'Keep the publication timestamp for each node.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: published_at

@@ -1,0 +1,22 @@
+uuid: 9ddd6014-b2f5-46f1-9d05-d824325fd0b9
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_monography_section
+id: taxonomy_term.dk_ff_monography_section.status
+field_name: status
+entity_type: taxonomy_term
+bundle: dk_ff_monography_section
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

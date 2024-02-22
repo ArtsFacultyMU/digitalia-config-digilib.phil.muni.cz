@@ -1,0 +1,20 @@
+uuid: 9d31b559-fb65-47fb-8c48-01b1d8f86cdd
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_department
+  module:
+    - text
+id: taxonomy_term.dk_ff_department.description
+field_name: description
+entity_type: taxonomy_term
+bundle: dk_ff_department
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
