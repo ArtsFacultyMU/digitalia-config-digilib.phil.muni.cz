@@ -7,5 +7,6 @@ form_ids:
   - user_register_form
   - 'contact_*'
   - contact-message-feedback-form
+  - feedback
   - ''
 show_form_ids: false

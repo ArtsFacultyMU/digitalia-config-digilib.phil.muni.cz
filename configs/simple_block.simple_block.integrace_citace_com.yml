@@ -7,5 +7,5 @@ dependencies:
 id: integrace_citace_com
 title: 'Integrace citace.com'
 content:
-  value: "<div id=\"com.citacepro.citace\">&nbsp;</div>\r\n<script src=\"https://www.citacepro.com/citace-v-katalogu.js\"></script>"
+  value: "<div id=\"com.citacepro.citace\" lang=\"en\">&nbsp;</div>\r\n<script src=\"https://www.citacepro.com/citace-v-katalogu.js\"></script>"
   format: full_html

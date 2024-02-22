@@ -3,6 +3,6 @@ langcode: cs
 status: true
 dependencies: {  }
 id: '-test-menu'
-label: 'Main menu test'
-description: 'Main menu summary'
+label: '** test menu'
+description: 'Maiin menu summary'
 locked: false

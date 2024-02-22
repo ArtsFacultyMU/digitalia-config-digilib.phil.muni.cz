@@ -251,9 +251,6 @@ solr_configs:
             -
               name: buildOnStartup
               VALUE: 'false'
-            -
-              name: indexPath
-              VALUE: ./cs
 text_files:
   stopwords: |
     dnes

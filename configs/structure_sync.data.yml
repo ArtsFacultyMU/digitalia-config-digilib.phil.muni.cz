@@ -3,7 +3,7 @@ menus:
     menu_name: '-test-menu'
     title: Domů
     parent: null
-    uri: 'internal:/'
+    uri: 'internal:/test/homepage_view'
     link_title: ''
     description: null
     enabled: true

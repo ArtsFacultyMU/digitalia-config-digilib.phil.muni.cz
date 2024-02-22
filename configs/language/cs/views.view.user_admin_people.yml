@@ -11,6 +11,8 @@ display:
             format_custom_true: Aktivní
         operations:
           label: Operace
+        mail:
+          separator: ', '
       pager:
         options:
           tags:
@@ -25,6 +27,7 @@ display:
       exposed_form:
         options:
           submit_button: Filtr
+          reset_button_label: Reset
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně
