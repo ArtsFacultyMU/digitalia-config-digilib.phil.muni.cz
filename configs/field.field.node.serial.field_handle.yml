@@ -1,0 +1,19 @@
+uuid: 7ec5d850-f851-491e-bfb2-af6fe4b48e8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_handle
+    - node.type.serial
+id: node.serial.field_handle
+field_name: field_handle
+entity_type: node
+bundle: serial
+label: 'Persistent identifier (handle)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

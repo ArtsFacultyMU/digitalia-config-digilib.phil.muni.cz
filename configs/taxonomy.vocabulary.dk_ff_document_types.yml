@@ -1,0 +1,8 @@
+uuid: 3b9573ec-a623-4d49-a98e-b2d2e1d294e2
+langcode: en
+status: true
+dependencies: {  }
+name: 'DK FF: Document types'
+vid: dk_ff_document_types
+description: ''
+weight: 0

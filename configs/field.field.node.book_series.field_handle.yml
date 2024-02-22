@@ -1,0 +1,19 @@
+uuid: df2e6a02-88d1-476d-9712-58e27b8a6563
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_handle
+    - node.type.book_series
+id: node.book_series.field_handle
+field_name: field_handle
+entity_type: node
+bundle: book_series
+label: Handle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

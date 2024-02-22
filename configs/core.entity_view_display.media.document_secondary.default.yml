@@ -1,0 +1,38 @@
+uuid: f60b74cd-1042-4b2d-a83f-02ffeb66355f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.document_secondary.field_media_document
+    - field.field.media.document_secondary.field_media_of
+    - media.type.document_secondary
+  module:
+    - file
+id: media.document_secondary.default
+targetEntityType: media
+bundle: document_secondary
+mode: default
+content:
+  field_media_document:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media_of:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

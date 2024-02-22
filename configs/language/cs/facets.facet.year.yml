@@ -1,0 +1,4 @@
+name: 'Rok vydání'
+widget:
+  config:
+    default_option_label: Vybrat

@@ -1,0 +1,18 @@
+uuid: a28b89c4-feb0-4468-99dc-9b0f98fe221f
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.serial
+id: node.serial.created
+field_name: created
+entity_type: node
+bundle: serial
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

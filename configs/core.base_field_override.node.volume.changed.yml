@@ -1,0 +1,18 @@
+uuid: 03c3af33-9f81-40c1-a731-b7775d91db40
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.volume
+id: node.volume.changed
+field_name: changed
+entity_type: node
+bundle: volume
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

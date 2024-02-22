@@ -1,0 +1,20 @@
+uuid: 800b3a63-dfd2-420d-82b9-8fafeb96f9ec
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.chapter
+  module:
+    - path
+id: node.chapter.path
+field_name: path
+entity_type: node
+bundle: chapter
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

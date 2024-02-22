@@ -1,0 +1,23 @@
+uuid: beda607f-1755-4582-8bc7-768184ce601e
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pagination_from
+    - node.type.chapter
+id: node.chapter.field_pagination_from
+field_name: field_pagination_from
+entity_type: node
+bundle: chapter
+label: 'Pagination (from)'
+description: 'This should be filled if the first value of the Extent field contains non-numeric characters. Use only numeric characters. Example values: 11, 10, 2, 11 '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

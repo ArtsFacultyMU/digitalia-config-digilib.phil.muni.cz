@@ -1,0 +1,18 @@
+uuid: 097b71d6-cdcf-4524-9b1e-5a69015123be
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.islandora_models
+id: taxonomy_term.islandora_models.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: islandora_models
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

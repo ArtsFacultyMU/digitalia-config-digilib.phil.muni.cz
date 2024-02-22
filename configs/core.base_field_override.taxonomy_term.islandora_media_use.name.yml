@@ -1,0 +1,18 @@
+uuid: 66c99425-9613-4717-b138-c50588cfbd9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.islandora_media_use
+id: taxonomy_term.islandora_media_use.name
+field_name: name
+entity_type: taxonomy_term
+bundle: islandora_media_use
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

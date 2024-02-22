@@ -1,0 +1,18 @@
+uuid: 684bf483-eb48-42a5-8571-9d68b961cb58
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_pdf_origin
+id: taxonomy_term.dk_ff_pdf_origin.name
+field_name: name
+entity_type: taxonomy_term
+bundle: dk_ff_pdf_origin
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<p>Zvolte doménu nebo obor; přehled <a href=\"/cs/departments\">ústavů FF MU​</a>.</p>\r\n"
+            format: basic_html
+      title: Obory
+  page_1:
+    display_options:
+      menu:
+        title: Obory

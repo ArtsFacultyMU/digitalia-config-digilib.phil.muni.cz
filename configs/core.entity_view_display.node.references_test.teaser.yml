@@ -1,0 +1,45 @@
+uuid: 20e9b4c1-912c-4cbd-91ef-b34167648c21
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.references_test.field_references
+    - node.type.references_test
+  module:
+    - user
+id: node.references_test.teaser
+targetEntityType: node
+bundle: references_test
+mode: teaser
+content:
+  dk_ff_eva_link_to_real_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  openseadragon_media_evas_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  openseadragon_media_evas_service_file:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  pdfjs_media_evas_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  field_references: true
+  langcode: true
+  published_at: true
+  search_api_excerpt: true

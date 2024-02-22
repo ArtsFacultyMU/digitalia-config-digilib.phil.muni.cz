@@ -1,0 +1,33 @@
+uuid: 7c40c190-6739-4ee8-a5ae-2d0d7a980d66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_of_all
+    - node.type.book
+    - node.type.issue
+    - node.type.serial
+    - node.type.volume
+id: node.issue.field_member_of_all
+field_name: field_member_of_all
+entity_type: node
+bundle: issue
+label: 'Member of (including virtual)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      book: book
+      serial: serial
+      volume: volume
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: book
+field_type: entity_reference

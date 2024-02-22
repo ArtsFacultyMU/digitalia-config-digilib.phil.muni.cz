@@ -1,0 +1,27 @@
+uuid: 4330d4f5-ae56-4e79-9c9b-47b08db4972c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_document
+    - media.type.document_secondary
+  module:
+    - file
+id: media.document_secondary.field_media_document
+field_name: field_media_document
+entity_type: media
+bundle: document_secondary
+label: File
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: pdf
+  file_extensions: 'txt doc docx pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

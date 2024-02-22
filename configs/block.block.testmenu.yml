@@ -1,0 +1,51 @@
+uuid: 0396896d-39b2-4603-a63d-0d59a0df9cd7
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.-test-menu
+  module:
+    - context
+    - islandora
+    - system
+  theme:
+    - islandora_muni
+id: testmenu
+theme: islandora_muni
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:-test-menu'
+settings:
+  id: 'system_menu_block:-test-menu'
+  label: '** test menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

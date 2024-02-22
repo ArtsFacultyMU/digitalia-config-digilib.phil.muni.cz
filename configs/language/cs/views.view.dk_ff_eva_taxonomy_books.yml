@@ -1,0 +1,28 @@
+display:
+  entity_view_1:
+    display_options:
+      fields:
+        field_section_1:
+          alter:
+            text: '<h3>{{ field_section_1 }}</h3>'
+        field_member_of:
+          alter:
+            path: '/cs/search?search=&sort_by=title&sort_order=DESC&limit=1&nid={{ field_member_of__target_id }}&f[0]=content_type%3Abook&f[1]=topic%3A{{ raw_arguments.field_topic }}'
+  entity_view_2:
+    display_options:
+      fields:
+        field_section_1:
+          alter:
+            text: '<h3>{{ field_section_1 }}</h3>'
+        field_member_of:
+          alter:
+            path: '/cs/search?search=&sort_by=title&sort_order=DESC&limit=1&nid={{ field_member_of__target_id }}&f[0]=content_type%3Abook&f[1]=department%3A{{ raw_arguments.field_department_mu }}'
+  entity_view_3:
+    display_options:
+      fields:
+        field_section_1:
+          alter:
+            text: '<h3>{{ field_section_1 }}</h3>'
+        field_member_of:
+          alter:
+            path: '/cs/search?search=&sort_by=title&sort_order=DESC&limit=1&nid={{ field_member_of__target_id }}&f[0]=content_type%3Abook&f[1]=domain%3A{{ raw_arguments.field_domain_1 }}'

@@ -1,0 +1,21 @@
+uuid: 3d3c5979-2ba1-4dbd-b711-b40fbadddbdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_limit_to_role
+    - node.type.test_access
+  module:
+    - options
+id: node.test_access.field_limit_to_role
+field_name: field_limit_to_role
+entity_type: node
+bundle: test_access
+label: 'Limit to role'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

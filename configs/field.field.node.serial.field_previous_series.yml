@@ -1,0 +1,28 @@
+uuid: b957467b-8ce3-465d-85de-906984269395
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_previous_series
+    - node.type.serial
+id: node.serial.field_previous_series
+field_name: field_previous_series
+entity_type: node
+bundle: serial
+label: 'Previous serial'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      serial: serial
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

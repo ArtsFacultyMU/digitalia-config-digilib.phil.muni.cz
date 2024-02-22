@@ -1,0 +1,18 @@
+uuid: a9c24ec5-9965-4146-8d94-b0f9b80c6642
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.corporate_body
+id: taxonomy_term.corporate_body.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: corporate_body
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

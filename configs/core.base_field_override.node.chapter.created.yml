@@ -1,0 +1,18 @@
+uuid: f430850d-6daf-4865-9f89-6c385f72acac
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.chapter
+id: node.chapter.created
+field_name: created
+entity_type: node
+bundle: chapter
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

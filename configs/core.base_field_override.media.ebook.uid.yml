@@ -1,0 +1,20 @@
+uuid: 7013168c-e9aa-47de-aa3a-2697c8936ba9
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.ebook
+id: media.ebook.uid
+field_name: uid
+entity_type: media
+bundle: ebook
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

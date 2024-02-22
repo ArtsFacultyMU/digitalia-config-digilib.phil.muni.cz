@@ -1,0 +1,35 @@
+uuid: 99f5f9ab-59e7-4d65-82d1-1d22ace2ba9d
+langcode: en
+status: true
+dependencies: {  }
+id: term_department_mu_cs
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_content
+label: 'Import terms: Department MU (cs)'
+source:
+  plugin: csv
+  path: migrate/departments.csv
+  delimiter: "\t"
+  header_row_count: 1
+  ids:
+    - ústav
+  constants:
+    vid: dk_ff_department_mu
+    lang_en: en
+    lang_cs: cs
+process:
+  tid:
+    plugin: migration_lookup
+    source: ústav
+    migration: term_department_mu
+  name: ústav
+  vid: constants/vid
+  langcode: constants/lang_cs
+  content_translation_source: constants/lang_en
+destination:
+  plugin: 'entity:taxonomy_term'
+  translations: true
+migration_dependencies: null

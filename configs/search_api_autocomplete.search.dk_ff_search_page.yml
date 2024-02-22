@@ -1,0 +1,47 @@
+uuid: 938b5c3c-f5c2-4cab-b7e4-a86c25ea1aa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.dk_ff_content
+    - views.view.dk_ff_search_page
+  module:
+    - views
+    - search_api_autocomplete
+id: dk_ff_search_page
+label: 'DK FF: Search page'
+index_id: dk_ff_content
+suggester_settings:
+  live_results:
+    fields:
+      - title
+    highlight:
+      enabled: false
+      field: ''
+    view_modes:
+      'entity:node':
+        article: ''
+        article_part: ''
+        author: ''
+        author_name: ''
+        book: ''
+        book_series: ''
+        chapter: ''
+        chapter_part: ''
+        issue: ''
+        serial: ''
+suggester_weights:
+  live_results: 0
+suggester_limits: {  }
+search_settings:
+  'views:dk_ff_search_page':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: 150
+  submit_button_selector: ':submit'
+  autosubmit: true

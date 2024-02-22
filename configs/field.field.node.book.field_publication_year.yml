@@ -1,0 +1,19 @@
+uuid: ff91876e-11ec-46d0-9d4b-4f130aa23629
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_year
+    - node.type.book
+id: node.book.field_publication_year
+field_name: field_publication_year
+entity_type: node
+bundle: book
+label: 'Publication year (number only)'
+description: 'This should be filled if the first value of the Year of publication field contains non-numeric characters. Use only numeric characters. Example value: 1995.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

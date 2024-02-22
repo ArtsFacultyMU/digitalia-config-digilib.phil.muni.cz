@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: nv_HEvlVyT5RiYzw5Xg3kyIjxOkE-tpJfqoUeZtGckk
+hdl_prefix: 11222.digilib
+hdl_qualifier: digilib
+hdl_admin_handle: 11222.digilib/admin
+hdl_admin_index: '300'
+hdl_handle_api_endpoint: 'https://handle.phil.muni.cz:8000/api/handles/'
+hdl_handle_permissions: '111111111111'
+hdl_handle_basic_auth_password: 'Xkw,34jds:vdsQPcCLZ8UN'

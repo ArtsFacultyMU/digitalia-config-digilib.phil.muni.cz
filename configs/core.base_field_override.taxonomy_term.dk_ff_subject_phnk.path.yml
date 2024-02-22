@@ -1,0 +1,20 @@
+uuid: 903a2dc0-3d3d-4b50-bc9d-e3c52e45de94
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_subject_phnk
+  module:
+    - path
+id: taxonomy_term.dk_ff_subject_phnk.path
+field_name: path
+entity_type: taxonomy_term
+bundle: dk_ff_subject_phnk
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

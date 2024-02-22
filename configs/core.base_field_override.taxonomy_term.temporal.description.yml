@@ -1,0 +1,20 @@
+uuid: f614da61-9ef2-445a-9805-86565c6cf431
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.temporal
+  module:
+    - text
+id: taxonomy_term.temporal.description
+field_name: description
+entity_type: taxonomy_term
+bundle: temporal
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

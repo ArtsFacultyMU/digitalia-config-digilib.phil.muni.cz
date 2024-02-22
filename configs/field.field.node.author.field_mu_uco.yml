@@ -1,0 +1,19 @@
+uuid: bf661d99-05fa-45bd-9445-8c495cca1c87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mu_uco
+    - node.type.author
+id: node.author.field_mu_uco
+field_name: field_mu_uco
+entity_type: node
+bundle: author
+label: 'MU UČO'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

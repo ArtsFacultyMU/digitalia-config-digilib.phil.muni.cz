@@ -1,0 +1,61 @@
+uuid: 2bc38273-0d66-4943-9c5d-470f609f3b55
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.test_access.field_embargo_date
+    - field.field.node.test_access.field_limit_to_role
+    - field.field.node.test_access.field_member_of
+    - field.field.node.test_access.field_model
+    - node.type.test_access
+  module:
+    - user
+id: node.test_access.teaser
+targetEntityType: node
+bundle: test_access
+mode: teaser
+content:
+  dk_ff_eva_link_to_real_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  islandora_fits_checksum:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  openseadragon_media_evas_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  openseadragon_media_evas_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  openseadragon_media_evas_service_file:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  pdfjs_media_evas_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  field_embargo_date: true
+  field_limit_to_role: true
+  field_member_of: true
+  field_model: true
+  langcode: true
+  published_at: true
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: 377272f2-5519-4cb2-bfa9-691c4d4b6e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_domain
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.dk_ff_domain
+target_entity_type_id: taxonomy_term
+target_bundle: dk_ff_domain
+default_langcode: site_default
+language_alterable: true

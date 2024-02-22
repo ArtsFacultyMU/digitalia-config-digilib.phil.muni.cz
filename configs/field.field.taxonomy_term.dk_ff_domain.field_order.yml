@@ -1,0 +1,23 @@
+uuid: 1bb28c17-ec33-4299-9fa9-6e38d2586c1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_order
+    - taxonomy.vocabulary.dk_ff_domain
+id: taxonomy_term.dk_ff_domain.field_order
+field_name: field_order
+entity_type: taxonomy_term
+bundle: dk_ff_domain
+label: Order
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

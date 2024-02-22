@@ -1,0 +1,72 @@
+uuid: cda5a678-2fa4-4386-9df4-f6fa5e752fd0
+langcode: en
+status: true
+dependencies: {  }
+id: cover
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_files
+label: 'file cover.png'
+source:
+  plugin: csv
+  path: migrate/files_cover.csv
+  delimiter: "\t"
+  header_row_count: 1
+  ids:
+    - filepath
+  constants:
+    destination_dir: 'fedora://cover'
+    source_dir: /var/www/html/drupal/web/migrate/data/
+    ext: '-cover.png'
+process:
+  filename_handle:
+    plugin: concat
+    source:
+      - handle
+      - constants/ext
+  filename_alt:
+    -
+      plugin: explode
+      delimiter: /
+      source: filepath
+    -
+      plugin: concat
+      delimiter: _
+    -
+      plugin: ltrim
+      mask: _serial_
+    -
+      plugin: ltrim
+      mask: _monograph_
+    -
+      plugin: str_replace
+      search: '#'
+      replace: ''
+  filename:
+    plugin: if_condition
+    source: handle
+    condition: empty
+    do_get: '@filename_alt'
+    else_get: '@filename_handle'
+  destination:
+    plugin: concat
+    delimiter: /
+    source:
+      - constants/destination_dir
+      - '@filename'
+  src:
+    plugin: concat
+    source:
+      - constants/source_dir
+      - filepath
+  uri:
+    plugin: file_copy
+    source:
+      - '@src'
+      - '@destination'
+destination:
+  plugin: 'entity:file'
+  type: image
+migration_dependencies: null

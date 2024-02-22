@@ -1,0 +1,27 @@
+uuid: 732d935c-8b45-43c1-ac73-6a4e794b2209
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_document
+    - media.type.pdf_test
+  module:
+    - file
+id: media.pdf_test.field_media_document
+field_name: field_media_document
+entity_type: media
+bundle: pdf_test
+label: File
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

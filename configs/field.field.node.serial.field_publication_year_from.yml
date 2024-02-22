@@ -1,0 +1,19 @@
+uuid: c0c8bb2d-0dd8-4f1d-a215-dbc89cfb813f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_year_from
+    - node.type.serial
+id: node.serial.field_publication_year_from
+field_name: field_publication_year_from
+entity_type: node
+bundle: serial
+label: 'Publication year (from)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: cb44128d-fdfb-462e-bc89-a373474cc50c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.pdf_test
+id: media.pdf_test.changed
+field_name: changed
+entity_type: media
+bundle: pdf_test
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

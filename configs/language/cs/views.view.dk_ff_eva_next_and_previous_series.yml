@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      fields:
+        title:
+          label: Navazuje
+          alter:
+            path: '/cs/node/{{ nid }}'
+        field_publication_year_from:
+          alter:
+            text: "{% if field_publication_year_to is not empty %}\r\n({{ field_publication_year_from }}-{{ field_publication_year_to }})\r\n{% else %}\r\n({{ field_publication_year_from }}-dosud)\r\n{% endif %}"
+        title_1:
+          label: Předchází
+          alter:
+            path: '/cs/node/{{ nid_1 }}'
+        field_publication_year_from_1:
+          alter:
+            text: "{% if field_publication_year_to_1 is not empty %}\r\n({{ field_publication_year_from_1 }}-{{ field_publication_year_to_1 }})\r\n{% else %}\r\n({{ field_publication_year_from_1 }}-dosud)\r\n{% endif %}"
+  entity_view_1:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<strong>Předchází:</strong>\r\n"
+            format: basic_html
+  entity_view_2:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<strong>Navazuje:</strong>\r\n"
+            format: basic_html

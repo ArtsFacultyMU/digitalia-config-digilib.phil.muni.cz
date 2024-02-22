@@ -1,0 +1,19 @@
+uuid: 1af60ef1-8e65-432d-995c-0c5e2a10aa88
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_id
+    - taxonomy.vocabulary.dk_ff_department_mu
+id: taxonomy_term.dk_ff_department_mu.field_id
+field_name: field_id
+entity_type: taxonomy_term
+bundle: dk_ff_department_mu
+label: ID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 32ba8db9-ad4b-4eab-b685-ebd9c49d68fa
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.serial
+id: node.serial.changed
+field_name: changed
+entity_type: node
+bundle: serial
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

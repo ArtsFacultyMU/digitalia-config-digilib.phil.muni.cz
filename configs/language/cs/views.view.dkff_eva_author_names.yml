@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h3>[view:title]:</h3>\r\n"
+            format: basic_html
+      fields:
+        nothing:
+          alter:
+            text: "{% if field_preferred == '1' %}\r\n<strong>{{ title }} (preferováno)</strong>\r\n{% else %}\r\n{{ title }}\r\n{% endif %}"
+  entity_view_1:
+    display_options:
+      title: 'Varianty jmen'

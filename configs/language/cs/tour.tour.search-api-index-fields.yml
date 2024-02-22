@@ -1,0 +1,9 @@
+tips:
+  search-api-index-fields-label:
+    label: Popisek
+  search-api-index-fields-machine-name:
+    label: 'Strojový název'
+  search-api-index-fields-type:
+    label: Typ
+  search-api-index-fields-submit:
+    label: 'Uložit změny'

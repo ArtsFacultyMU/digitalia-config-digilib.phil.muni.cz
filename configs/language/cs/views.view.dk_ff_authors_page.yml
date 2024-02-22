@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      title: Autoři
+      exposed_form:
+        options:
+          submit_button: Hledej
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'Zadej celé jméno nebo jeho část'
+  page_1:
+    display_options:
+      menu:
+        title: Autoři

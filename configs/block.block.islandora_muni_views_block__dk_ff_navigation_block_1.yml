@@ -1,0 +1,58 @@
+uuid: ef5266b2-0761-4224-ae0a-66a22aea6218
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.dk_ff_navigation
+  module:
+    - context
+    - islandora
+    - views
+  theme:
+    - islandora_muni
+id: islandora_muni_views_block__dk_ff_navigation_block_1
+theme: islandora_muni
+region: breadcrumb
+weight: -29
+provider: null
+plugin: 'views_block:dk_ff_navigation-block_1'
+settings:
+  id: 'views_block:dk_ff_navigation-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  islandora_entity_bundle:
+    id: islandora_entity_bundle
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      author: author

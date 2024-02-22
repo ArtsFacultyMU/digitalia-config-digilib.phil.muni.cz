@@ -1,0 +1,16 @@
+uuid: 986e9375-4c05-4b36-9403-e06a433d7e35
+langcode: en
+status: true
+dependencies: {  }
+id: node__serial
+label: 'Content: Serial'
+tags:
+  dcterms_date: '[node:field_publication_year_from] -- [node:field_publication_year_to]'
+  dcterms_description: '[node:field_description]'
+  dcterms_identifier: 'https://hdl.handle.net/11222.digilib/[node:field_handle]'
+  dcterms_language: '[digitalia_muni:taxonomy__field_language:language:field_code]'
+  dcterms_publisher: '[node:field_publisher]'
+  dcterms_relation: '[digitalia_muni:field_previous_series:serial:title]^[digitalia_muni:field_next_series:serial:title]'
+  dcterms_rights: '[node:field_rights]'
+  dcterms_subject: '[node:field_topic]'
+  dcterms_title: '[digitalia_muni:double__field_title_main:1]^[digitalia_muni:triple__field_titles:title]^[digitalia_muni:double__field_variant_title:1]'

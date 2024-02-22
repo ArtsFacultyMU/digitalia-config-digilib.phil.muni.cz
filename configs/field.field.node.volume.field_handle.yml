@@ -1,0 +1,19 @@
+uuid: 1907146f-e872-46d1-80fe-a4ac066c45bd
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_handle
+    - node.type.volume
+id: node.volume.field_handle
+field_name: field_handle
+entity_type: node
+bundle: volume
+label: 'Persistent identifier (handle)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: 33efaebb-4ebd-482d-9dc6-7252c5b1fe31
+langcode: und
+status: true
+dependencies: {  }
+name: 'DK FF: Topic'
+vid: dk_ff_topic
+description: ''
+weight: 0

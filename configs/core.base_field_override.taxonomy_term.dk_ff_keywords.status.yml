@@ -1,0 +1,22 @@
+uuid: 13b126d6-0a29-40e9-a235-47581bbe4935
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_keywords
+id: taxonomy_term.dk_ff_keywords.status
+field_name: status
+entity_type: taxonomy_term
+bundle: dk_ff_keywords
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

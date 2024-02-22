@@ -1,0 +1,92 @@
+uuid: 4157701e-2475-4cf9-b294-8f01ec855841
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.author_name.field_author_id
+    - field.field.node.author_name.field_identifier
+    - field.field.node.author_name.field_name_structured
+    - field.field.node.author_name.field_name_transliterated
+    - field.field.node.author_name.field_preferred
+    - node.type.author_name
+  module:
+    - name
+id: node.author_name.default
+targetEntityType: node
+bundle: author_name
+mode: default
+content:
+  field_author_id:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_name_structured:
+    type: name_default
+    weight: 2
+    region: content
+    settings:
+      override_field_settings: false
+      labels:
+        title: Title
+        given: Given
+        middle: 'Middle name(s)'
+        family: Family
+        generational: Generational
+        credentials: Credentials
+      widget_layout: stacked
+      show_component_required_marker: false
+      credentials_inline: false
+      size:
+        title: 6
+        given: 20
+        middle: 20
+        family: 20
+        generational: 5
+        credentials: 35
+      title_display:
+        title: description
+        given: description
+        middle: description
+        family: description
+        generational: description
+        credentials: description
+    third_party_settings: {  }
+  field_name_transliterated:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_preferred:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_identifier: true
+  langcode: true
+  path: true
+  promote: true
+  published_at: true
+  status: true
+  sticky: true
+  uid: true

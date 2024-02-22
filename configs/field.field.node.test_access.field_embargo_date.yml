@@ -1,0 +1,24 @@
+uuid: 55ed0a48-dea5-470b-9651-b9a62bf965ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embargo_date
+    - node.type.test_access
+  module:
+    - datetime
+id: node.test_access.field_embargo_date
+field_name: field_embargo_date
+entity_type: node
+bundle: test_access
+label: 'Embargo date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime
