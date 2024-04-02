@@ -5,12 +5,15 @@ display:
       exposed_form:
         options:
           submit_button: Hledej
+          reset_button_label: Reset
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně
       pager:
         options:
           tags:
+            previous: ‹‹
+            next: ››
             first: '« První'
             last: 'Poslední »'
           expose:
@@ -20,6 +23,7 @@ display:
       fields:
         title:
           label: Nadpis
+          separator: ', '
       arguments:
         field_member_of_target_id:
           exception:

@@ -14,7 +14,7 @@ bundle: chapter
 label: 'Transliterated title'
 description: 'This should be filled if the main title starts with non-latin character. Used in glossary on Titles page. '
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

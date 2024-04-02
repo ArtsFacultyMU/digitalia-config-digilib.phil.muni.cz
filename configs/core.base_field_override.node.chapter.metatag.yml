@@ -1,0 +1,18 @@
+uuid: 9740ed6f-4f26-4274-99fc-17893ecef17f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.chapter
+id: node.chapter.metatag
+field_name: metatag
+entity_type: node
+bundle: chapter
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

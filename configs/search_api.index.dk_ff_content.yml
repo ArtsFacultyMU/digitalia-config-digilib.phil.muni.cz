@@ -4,29 +4,29 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_description
+    - field.storage.node.field_topic
+    - field.storage.taxonomy_term.field_domain
     - field.storage.node.field_author
+    - field.storage.node.field_member_of
     - field.storage.node.field_author_corporate
-    - field.storage.node.field_keywords
     - field.storage.node.field_author_id
     - field.storage.node.field_contributor
     - field.storage.node.field_department_mu
     - field.storage.node.field_member_of_all
-    - field.storage.node.field_topic
-    - field.storage.taxonomy_term.field_domain
     - field.storage.node.field_handle
-    - field.storage.node.field_language
-    - field.storage.node.field_member_of
-    - field.storage.node.field_publication_year_text
-    - field.storage.node.field_section
-    - field.storage.node.field_pagination_from
-    - field.storage.node.field_pagination
-    - field.storage.node.field_references
-    - field.storage.node.field_serial_type
-    - field.storage.node.field_subject_keywords
     - field.storage.node.field_type
     - field.storage.taxonomy_term.field_id
+    - field.storage.node.field_keywords
+    - field.storage.node.field_language
+    - field.storage.node.field_pagination_from
+    - field.storage.node.field_publication_year_text
+    - field.storage.node.field_references
+    - field.storage.node.field_section
+    - field.storage.node.field_serial_type
+    - field.storage.node.field_subject_keywords
     - field.storage.node.field_variant_title
     - field.storage.node.field_virtual
+    - field.storage.node.field_pagination
     - search_api.server.default_solr_server
     - core.entity_view_mode.node.extracted_text
     - core.entity_view_mode.node.metadata
@@ -82,7 +82,9 @@ third_party_settings:
       limit_to_content_language: false
       include_language_independent: true
       use_language_undefined_as_fallback_language: false
-      specific_languages: {  }
+      specific_languages:
+        en: '0'
+        cs: '0'
       use_universal_collation: false
 id: dk_ff_content
 name: 'DK FF Content'
@@ -668,6 +670,7 @@ datasource_settings:
       selected:
         - author
         - author_name
+        - documentation
         - islandora_object
         - page
         - references_test
@@ -728,7 +731,7 @@ processor_settings:
       - title
       - title_1
       - type
-    ignorable: '[''¿¡!?,.:;\[\]'']|(… )'
+    ignorable: '[''¿¡!?,.:;\[\]'']|(… )|(« )|(... )'
     ignorable_classes:
       - Pc
       - Pd
@@ -736,6 +739,7 @@ processor_settings:
       - Pf
       - Pi
       - Ps
+      - Zs
   language_with_fallback: {  }
   rendered_item: {  }
   solr_date_range:

@@ -7,5 +7,5 @@ dependencies:
 id: site_logo
 title: 'Site logo'
 content:
-  value: "<p><a class=\"site-branding__logo\" href=\"/en\" rel=\"home\"><img alt=\"Home\" src=\"/themes/islandora_muni/platform_specific/images/logo-en.svg\" /> </a></p>\r\n"
+  value: "<p><a class=\"site-branding__logo\" href=\"/en\" rel=\"home\"><img alt=\"Home\" src=\"/themes/custom/islandora_muni/platform_specific/images/logo-en.svg\" /> </a></p>\r\n"
   format: full_html

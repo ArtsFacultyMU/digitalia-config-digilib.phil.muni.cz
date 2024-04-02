@@ -1,7 +1,7 @@
-uuid: 2147cfe3-2861-4960-9ab9-5ecb2a250ba8
-langcode: en
+uuid: b86f68a2-5157-4499-b387-6cc190451b37
+langcode: cs
 status: true
 dependencies: {  }
 formId: contact_message_feedback_form
-captchaType: captcha/Math
+captchaType: recaptcha/reCAPTCHA
 label: contact-message-feedback-form

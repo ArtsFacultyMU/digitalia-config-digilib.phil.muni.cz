@@ -748,7 +748,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if bundle == 'attachment' %}\r\n<a href={{ field_media_file }} target=\"_blank\" >ZIP</a>\r\n{% elseif nothing_1 == 'open' %}\r\n<a href={{ field_media_document }} target=\"_blank\" >PDF</a>\r\n{% elseif nothing_1 == 'closed' %}\r\n<div class=\"not-available\"><img src=\"/themes/islandora_muni/key02.svg\"> PDF</div>\r\n{% endif %}"
+            text: "{% if bundle == 'attachment' %}\r\n<a href={{ field_media_file }} target=\"_blank\" >ZIP</a>\r\n{% elseif nothing_1 == 'open' %}\r\n<a href={{ field_media_document }} target=\"_blank\" >PDF</a>\r\n{% elseif nothing_1 == 'closed' %}\r\n<div class=\"not-available\"><img src=\"/themes/custom/islandora_muni/key02.svg\"> PDF</div>\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -797,7 +797,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if bundle == 'attachment' %}\r\n<a href={{ field_media_file }} target=\"_blank\" >ZIP</a>\r\n{% elseif nothing_1 == 'open' %}\r\n<a href={{ field_media_document }} target=\"_blank\" >PDF</a>\r\n{% elseif nothing_1 == 'closed' %}\r\n<div class=\"not-available\"><a href={{ field_media_document }} target=\"_blank\" ><img src=\"/themes/islandora_muni/key02.svg\"> PDF</a></div>\r\n{% endif %}"
+            text: "{% if bundle == 'attachment' %}\r\n<a href={{ field_media_file }} target=\"_blank\" >ZIP</a>\r\n{% elseif nothing_1 == 'open' %}\r\n<a href={{ field_media_document }} target=\"_blank\" >PDF</a>\r\n{% elseif nothing_1 == 'closed' %}\r\n<div class=\"not-available\"><a href={{ field_media_document }} target=\"_blank\" ><img src=\"/themes/custom/islandora_muni/key02.svg\"> PDF</a></div>\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false

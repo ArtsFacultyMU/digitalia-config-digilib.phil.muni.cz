@@ -7,5 +7,5 @@ dependencies:
 id: homepage_copyright
 title: 'Homepage copyright'
 content:
-  value: "<p class=\"copyright-title\">Copyright</p>\r\n\r\n<p><span>Digital Library of Faculty of Arts, Masaryk University [dataset], authored and created by Masaryk University, can be used in accordance with the Creative Commons BY 4.0.</span></p>\r\n\r\n<p><img alt=\"CC-BY-4.0\" class=\"license_icon\" src=\"/themes/islandora_muni/images/by-nc-sa.svg\" /></p>\r\n"
+  value: "<p class=\"copyright-title\">Copyright</p>\r\n\r\n<p><span>Digital Library of Faculty of Arts, Masaryk University [dataset], authored and created by Masaryk University, can be used in accordance with the Creative Commons BY 4.0.</span></p>\r\n\r\n<p><img alt=\"CC-BY-4.0\" class=\"license_icon\" src=\"/themes/custom/islandora_muni/images/by-nc-sa.svg\" /></p>\r\n"
   format: full_html

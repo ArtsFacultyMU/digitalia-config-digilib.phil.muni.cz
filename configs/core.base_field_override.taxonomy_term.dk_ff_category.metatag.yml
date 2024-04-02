@@ -1,0 +1,18 @@
+uuid: f2684346-b0a1-43a6-ad7c-68a97d6593ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_category
+id: taxonomy_term.dk_ff_category.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: dk_ff_category
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map
