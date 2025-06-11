@@ -1,0 +1,30 @@
+uuid: dfa7face-fcbb-4082-bfac-3c1e363ce444
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: handle_node_alias
+label: 'Handle node alias'
+type: 'canonical_entities:node'
+pattern: '/handle/11222.digilib/[node:field_handle]'
+selection_criteria:
+  bf47bfe5-b0c1-4218-b301-3c3b94ea1b63:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: bf47bfe5-b0c1-4218-b301-3c3b94ea1b63
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      book: book
+      book_series: book_series
+      chapter: chapter
+      issue: issue
+      serial: serial
+      volume: volume
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Language

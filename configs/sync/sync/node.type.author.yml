@@ -1,0 +1,17 @@
+uuid: c510f881-f3ac-440d-b188-b1cb7409f060
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Author ID'
+type: author
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

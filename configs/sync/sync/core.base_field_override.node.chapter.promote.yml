@@ -1,0 +1,22 @@
+uuid: 9d7a9a1a-635e-4223-88e9-96031096f09a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.chapter
+id: node.chapter.promote
+field_name: promote
+entity_type: node
+bundle: chapter
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

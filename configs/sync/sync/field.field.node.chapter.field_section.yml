@@ -1,0 +1,29 @@
+uuid: 5d077d94-7412-4864-a2fc-8839970f2f00
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.chapter
+    - taxonomy.vocabulary.dk_ff_monography_section
+id: node.chapter.field_section
+field_name: field_section
+entity_type: node
+bundle: chapter
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dk_ff_monography_section: dk_ff_monography_section
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

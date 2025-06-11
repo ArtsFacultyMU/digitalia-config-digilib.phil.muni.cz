@@ -1,0 +1,11 @@
+uuid: 8817ddcf-8ee7-43e9-8334-3bdda894bb57
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: homepage_text
+title: 'Homepage text'
+content:
+  value: "<div class=\"WACEditing EditMode EditingSurfaceBody FireFox WACViewPanel_DisableLegacyKeyCodeAndCharCode usehover\">\r\n<div class=\"OutlineElement Ltr SCXW230359431 BCX2\">\r\n<div class=\"WACEditing EditMode EditingSurfaceBody FireFox WACViewPanel_DisableLegacyKeyCodeAndCharCode usehover\">\r\n<div class=\"OutlineElement Ltr SCXW101825398 BCX2\">\r\n<p><span lang=\"EN-US\"><span>The Digital Library of the Faculty of Arts, Masaryk University (D</span><span>L</span><span> FF MU) provides access to the results of academic research in the form of journals, proceedings and monographs. Most of the documents are freely available in full text and can be viewed and searched according to various criteria. The full texts can be further </span><span>used </span><span>in accordance with the </span><span>licences</span><span>. The content and structure of the database is described in more detail in the </span></span><a class=\"Hyperlink SCXW101825398 BCX2\" href=\"https://digilib.phil.muni.cz/en/about\" target=\"_blank\"><span lang=\"EN-US\"><span>About</span></span></a><span lang=\"EN-US\"><span> and </span></span><a class=\"Hyperlink SCXW101825398 BCX2\" href=\"https://digilib.phil.muni.cz/en/help\" target=\"_blank\"><span lang=\"EN-US\"><span>Help</span></span></a><span lang=\"EN-US\"><span> sections. Any comments and opinions on the </span><span>DL </span><span>FF MU </span></span><a class=\"Hyperlink SCXW101825398 BCX2\" href=\"https://digilib.phil.muni.cz/en/contact\" target=\"_blank\"><span lang=\"EN-US\"><span>are welcome</span></span></a><span lang=\"EN-US\"><span>.</span></span><span>&nbsp;</span></p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+  format: basic_html

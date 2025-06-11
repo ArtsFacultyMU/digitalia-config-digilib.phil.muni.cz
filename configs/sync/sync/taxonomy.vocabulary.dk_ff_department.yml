@@ -1,0 +1,9 @@
+uuid: e56d67eb-f455-4997-bada-d2d11c5bf27c
+langcode: en
+status: true
+dependencies: {  }
+name: 'DK FF: Department'
+vid: dk_ff_department
+description: null
+weight: 0
+new_revision: false

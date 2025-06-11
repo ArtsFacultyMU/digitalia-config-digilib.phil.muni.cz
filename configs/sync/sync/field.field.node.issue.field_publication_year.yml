@@ -1,0 +1,19 @@
+uuid: 0991caa0-a2ae-4c88-9689-54f1316a89cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_year
+    - node.type.issue
+id: node.issue.field_publication_year
+field_name: field_publication_year
+entity_type: node
+bundle: issue
+label: Year
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

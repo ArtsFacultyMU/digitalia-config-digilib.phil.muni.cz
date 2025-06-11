@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        nid:
+          alter:
+            text: '<a href="/cs/advanced-search?field_descendant_of={{ nid }}">Hledej v této položce</a>'

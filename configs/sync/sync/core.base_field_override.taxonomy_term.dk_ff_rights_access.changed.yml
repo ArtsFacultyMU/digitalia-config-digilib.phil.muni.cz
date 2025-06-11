@@ -1,0 +1,18 @@
+uuid: 389b5fd9-e89f-42fb-8d27-6e66584d4c58
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_rights_access
+id: taxonomy_term.dk_ff_rights_access.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: dk_ff_rights_access
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

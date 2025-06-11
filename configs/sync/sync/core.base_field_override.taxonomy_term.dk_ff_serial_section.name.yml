@@ -1,0 +1,18 @@
+uuid: 4f0b2473-472e-4933-97ff-a47da4705eeb
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_serial_section
+id: taxonomy_term.dk_ff_serial_section.name
+field_name: name
+entity_type: taxonomy_term
+bundle: dk_ff_serial_section
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

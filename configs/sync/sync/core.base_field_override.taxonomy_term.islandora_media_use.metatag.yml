@@ -1,0 +1,18 @@
+uuid: 0de04a4e-9333-4dbc-94ff-6fd3edf6908e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.islandora_media_use
+id: taxonomy_term.islandora_media_use.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: islandora_media_use
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

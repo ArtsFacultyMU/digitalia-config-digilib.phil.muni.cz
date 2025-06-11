@@ -1,0 +1,11 @@
+uuid: ac7172dd-a5a8-4482-85d1-11dcc3f6fe6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.extracted_text
+label: 'Extracted text'
+description: ''
+targetEntityType: node
+cache: true

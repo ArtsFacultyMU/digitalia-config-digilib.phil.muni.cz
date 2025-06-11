@@ -1,0 +1,23 @@
+uuid: da978b09-a135-456a-969f-26e6c1fa1dff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtual
+    - node.type.volume
+id: node.volume.field_virtual
+field_name: field_virtual
+entity_type: node
+bundle: volume
+label: Virtual
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,14 @@
+uuid: 44ea261c-7887-4176-8116-07d640626f15
+langcode: cs
+status: true
+dependencies: {  }
+id: attachment
+label: Attachment
+description: 'Chapters with zip files.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map:
+  filesize: field_file_size

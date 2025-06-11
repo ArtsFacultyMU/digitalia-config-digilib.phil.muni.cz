@@ -1,0 +1,155 @@
+uuid: 0687f3bb-2e9b-4fdc-8b18-b196cd47dfc6
+langcode: en
+status: true
+dependencies: {  }
+id: node_book
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_content
+label: 'Import nodes: Book'
+source:
+  plugin: csv
+  delimiter: "\t"
+  path: migrate/books.csv
+  header_row_count: 1
+  ids:
+    - path
+  constants:
+    uid: 1
+    empty: empty
+    cs: cs
+process:
+  uid: constants/uid
+  title:
+    -
+      plugin: explode
+      delimiter: §+§
+      source: Title§+§lang
+    -
+      plugin: extract
+      index:
+        - 0
+  field_title_language:
+    -
+      plugin: explode
+      delimiter: §+§
+      source: Title§+§lang
+    -
+      plugin: extract
+      index:
+        - 1
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      value_key: field_code
+      bundle_key: vid
+      bundle: language
+  titles:
+    -
+      source: TitleVariant§+§lang
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: explode
+      delimiter: §|§
+    -
+      plugin: str_to_assoc
+      key: title
+  field_variant_title:
+    plugin: sub_process
+    source: '@titles'
+    process:
+      exploded:
+        plugin: explode
+        delimiter: §+§
+        source: title
+      first:
+        plugin: extract
+        index:
+          - 0
+        source: '@exploded'
+      second:
+        plugin: extract
+        index:
+          - 1
+        source: '@exploded'
+  field_title_main/first:
+    -
+      plugin: explode
+      source: Title§+§lang
+      delimiter: §+§
+    -
+      plugin: extract
+      index:
+        - 0
+  field_title_main/second:
+    -
+      plugin: explode
+      source: Title§+§lang
+      delimiter: §+§
+    -
+      plugin: extract
+      index:
+        - 1
+      default: ''
+  title_transliterated:
+    -
+      source: Transliterated
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: explode
+      delimiter: §+§
+  field_title_main_transliterated/first:
+    -
+      source: '@title_transliterated'
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: extract
+      index:
+        - 0
+  field_title_main_transliterated/second:
+    -
+      source: '@title_transliterated'
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: extract
+      index:
+        - 1
+  titles_translit:
+    -
+      source: 'Transliterated other'
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: explode
+      delimiter: §|§
+    -
+      plugin: str_to_assoc
+      key: title
+  field_variant_title_translit:
+    plugin: sub_process
+    source: '@titles_translit'
+    process:
+      exploded:
+        plugin: explode
+        delimiter: §+§
+        source: title
+      first:
+        plugin: extract
+        index:
+          - 0
+        source: '@exploded'
+      second:
+        plugin: extract
+        index:
+          - 1
+        source: '@exploded'
+destination:
+  plugin: 'entity:node'
+  default_bundle: book
+migration_dependencies: null

@@ -1,0 +1,35 @@
+uuid: 54534a1a-2297-4d79-9b7e-8d7ee8d2235b
+langcode: en
+status: true
+dependencies: {  }
+id: term_types_cs
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_content
+label: 'Import terms: Document types (cs)'
+source:
+  plugin: csv
+  path: migrate/types.csv
+  delimiter: "\t"
+  header_row_count: 1
+  ids:
+    - key
+  constants:
+    vid: dk_ff_document_types
+    lang_en: en
+    lang_cs: cs
+process:
+  tid:
+    plugin: migration_lookup
+    source: key
+    migration: term_types
+  name: label-cs
+  vid: constants/vid
+  langcode: constants/lang_cs
+  content_translation_source: constants/lang_en
+destination:
+  plugin: 'entity:taxonomy_term'
+  translations: true
+migration_dependencies: null

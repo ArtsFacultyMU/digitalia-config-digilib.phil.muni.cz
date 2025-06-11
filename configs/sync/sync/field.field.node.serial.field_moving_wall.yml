@@ -1,0 +1,23 @@
+uuid: f04491da-de2d-4ba1-8045-bbb1a690f45a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_moving_wall
+    - node.type.serial
+id: node.serial.field_moving_wall
+field_name: field_moving_wall
+entity_type: node
+bundle: serial
+label: 'Moving wall'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

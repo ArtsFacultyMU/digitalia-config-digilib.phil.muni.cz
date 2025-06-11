@@ -1,0 +1,18 @@
+uuid: 543fdd18-dd30-4c50-994b-ec95946407ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.documentation
+id: node.documentation.title
+field_name: title
+entity_type: node
+bundle: documentation
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

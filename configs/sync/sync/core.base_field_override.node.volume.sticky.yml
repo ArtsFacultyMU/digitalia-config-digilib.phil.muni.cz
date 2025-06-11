@@ -1,0 +1,22 @@
+uuid: aa125211-a523-4ed6-8495-0e0414171f87
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.volume
+id: node.volume.sticky
+field_name: sticky
+entity_type: node
+bundle: volume
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

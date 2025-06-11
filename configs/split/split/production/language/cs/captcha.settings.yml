@@ -1,0 +1,3 @@
+description: 'Prosím odšktrtněte pro potvrzení, že nejste spamovací robot.'
+title: CAPTCHA
+wrong_captcha_response_message: 'Potvrzení, že nejste robot, se nezdařilo, prosíme zkuste to ještě jednou (v rámečku CAPCTHA dole pod formulářem).'

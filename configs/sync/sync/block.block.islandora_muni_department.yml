@@ -1,0 +1,36 @@
+uuid: 3e838b6f-3fef-4d56-84c2-2b5621a17544
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.department
+  module:
+    - context
+    - facets
+    - islandora
+  theme:
+    - islandora_muni
+id: islandora_muni_department
+theme: islandora_muni
+region: sidebar_first
+weight: -19
+provider: null
+plugin: 'facet_block:department'
+settings:
+  id: 'facet_block:department'
+  label: Department
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: islandora_muni_department
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-dk_ff_search_page-page_1: view-dk_ff_search_page-page_1
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

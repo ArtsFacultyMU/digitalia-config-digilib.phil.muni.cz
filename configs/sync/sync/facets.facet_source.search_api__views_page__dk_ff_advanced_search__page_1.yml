@@ -1,0 +1,9 @@
+uuid: 23ec1c2c-a07d-47ad-b930-c0ff4487bfba
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__dk_ff_advanced_search__page_1
+name: 'search_api:views_page__dk_ff_advanced_search__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

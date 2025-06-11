@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_member_of:
+          label: 'Zdrojový dokument'
+        title:
+          alter:
+            text: 'roč. {{ title }}, '
+        title_1:
+          alter:
+            text: 'č. {{ title_1 }}, '
+        field_pagination:
+          alter:
+            text: 's. {{ field_pagination__first }}-{{ field_pagination__second }}'

@@ -1,0 +1,19 @@
+uuid: e053c5f2-4d2e-41f2-a537-0d7d677e6101
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_path
+    - node.type.serial
+id: node.serial.field_path
+field_name: field_path
+entity_type: node
+bundle: serial
+label: 'Path (ME)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

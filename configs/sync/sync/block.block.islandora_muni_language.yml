@@ -1,0 +1,36 @@
+uuid: bdfe6f78-ff2b-4f60-a68c-3ac570722bc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.language
+  module:
+    - context
+    - facets
+    - islandora
+  theme:
+    - islandora_muni
+id: islandora_muni_language
+theme: islandora_muni
+region: sidebar_first
+weight: -15
+provider: null
+plugin: 'facet_block:language'
+settings:
+  id: 'facet_block:language'
+  label: Language
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: islandora_muni_language
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-dk_ff_search_page-page_1: view-dk_ff_search_page-page_1
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

@@ -1,0 +1,18 @@
+uuid: 5fe466c1-8dbb-4251-8195-81ed212e5094
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.islandora_models
+id: taxonomy_term.islandora_models.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: islandora_models
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

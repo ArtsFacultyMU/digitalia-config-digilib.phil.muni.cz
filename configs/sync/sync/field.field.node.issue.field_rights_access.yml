@@ -1,0 +1,29 @@
+uuid: 3a9a0f29-2c95-4f58-a08f-de0f1f6613ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rights_access
+    - node.type.issue
+    - taxonomy.vocabulary.dk_ff_rights_access
+id: node.issue.field_rights_access
+field_name: field_rights_access
+entity_type: node
+bundle: issue
+label: 'Rights access'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dk_ff_rights_access: dk_ff_rights_access
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

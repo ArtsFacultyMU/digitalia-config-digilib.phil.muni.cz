@@ -1,0 +1,20 @@
+uuid: 2803bbde-0530-44f3-a803-c17bd3d7ae83
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_rights_access
+  module:
+    - path
+id: taxonomy_term.dk_ff_rights_access.path
+field_name: path
+entity_type: taxonomy_term
+bundle: dk_ff_rights_access
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

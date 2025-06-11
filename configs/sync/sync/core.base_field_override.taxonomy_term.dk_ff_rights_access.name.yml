@@ -1,0 +1,18 @@
+uuid: d9327621-8d81-41e1-87a2-2456f8ed440e
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_rights_access
+id: taxonomy_term.dk_ff_rights_access.name
+field_name: name
+entity_type: taxonomy_term
+bundle: dk_ff_rights_access
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 61b32f0a-62d8-429a-945a-332cffed1d9d
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.pdf_test
+id: media.pdf_test.name
+field_name: name
+entity_type: media
+bundle: pdf_test
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

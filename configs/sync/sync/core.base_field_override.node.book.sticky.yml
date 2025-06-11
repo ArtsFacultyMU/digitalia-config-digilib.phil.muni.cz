@@ -1,0 +1,22 @@
+uuid: ce3fbcb0-eb2d-4dde-a01f-1d87a0746c38
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.book
+id: node.book.sticky
+field_name: sticky
+entity_type: node
+bundle: book
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

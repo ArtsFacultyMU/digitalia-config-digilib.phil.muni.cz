@@ -1,0 +1,23 @@
+uuid: 3fade9f0-abce-4020-ba57-69241020037d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ojs_source
+    - node.type.article
+id: node.article.field_ojs_source
+field_name: field_ojs_source
+entity_type: node
+bundle: article
+label: 'OJS source'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

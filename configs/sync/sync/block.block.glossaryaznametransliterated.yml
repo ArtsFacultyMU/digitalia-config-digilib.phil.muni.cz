@@ -1,0 +1,36 @@
+uuid: f1af4992-ee7f-4ce0-8377-132fc99653f0
+langcode: cs
+status: true
+dependencies:
+  config:
+    - facets.facet.authors_glossary
+  module:
+    - context
+    - facets
+    - islandora
+  theme:
+    - islandora_muni
+id: glossaryaznametransliterated
+theme: islandora_muni
+region: content
+weight: -28
+provider: null
+plugin: 'facet_block:authors_glossary'
+settings:
+  id: 'facet_block:authors_glossary'
+  label: 'Glossary AZ - Name (transliterated)'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: glossaryaznametransliterated
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-dk_ff_authors_page-page_1: view-dk_ff_authors_page-page_1
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

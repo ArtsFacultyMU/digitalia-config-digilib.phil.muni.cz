@@ -1,0 +1,19 @@
+uuid: 630fe591-775c-45de-ad31-7adc499fc0a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_handle
+    - node.type.article
+id: node.article.field_handle
+field_name: field_handle
+entity_type: node
+bundle: article
+label: Handle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

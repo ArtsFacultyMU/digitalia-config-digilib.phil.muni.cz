@@ -1,0 +1,70 @@
+uuid: 611d8c2d-cb5d-4863-93eb-488bcf472f47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.dk_ff_rights.field_code
+    - field.field.taxonomy_term.dk_ff_rights.field_external_uri
+    - taxonomy.vocabulary.dk_ff_rights
+  module:
+    - link
+    - path
+    - text
+id: taxonomy_term.dk_ff_rights.default
+targetEntityType: taxonomy_term
+bundle: dk_ff_rights
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_code:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_external_uri:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

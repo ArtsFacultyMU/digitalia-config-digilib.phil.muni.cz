@@ -1,0 +1,23 @@
+uuid: 06f8887e-d0d5-437a-b48a-473bab1e12e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_url
+  module:
+    - link
+id: contact_message.feedback.field_url
+field_name: field_url
+entity_type: contact_message
+bundle: feedback
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

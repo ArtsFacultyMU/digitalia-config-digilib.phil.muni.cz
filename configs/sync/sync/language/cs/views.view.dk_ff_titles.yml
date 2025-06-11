@@ -1,0 +1,32 @@
+display:
+  page_1:
+    display_options:
+      menu:
+        title: Názvy
+  default:
+    display_options:
+      title: Názvy
+      header:
+        result:
+          content: 'Zobrazují se záznamy @start - @end z celkového počtu @total<br><br>'
+      pager:
+        options:
+          tags:
+            next: 'Další ››'
+            previous: '‹‹ Předchozí'
+            first: '« První'
+            last: 'Poslední »'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'Zadej řetězec'
+      exposed_form:
+        options:
+          submit_button: Hledej
+      fields:
+        field_pagination_from:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        nothing:
+          alter:
+            text: "{% if type_1|striptags == 'serial' %}\r\n  <em>{{ title }}</em>{{ field_publication_year_from }}–{{ field_publication_year_to }}\r\n{% elseif type_1|striptags == 'article' %}  \r\n  {{ nothing_2 }}{{ title }}<em>{{ field_member_of_2 }}</em>{{ aggregated_field_published }}, roč. {{ field_member_of_1 }}, č. {{ field_member_of }}, s. {{ field_pagination_from }}{{second}}.\r\n{% elseif type_1|striptags == 'book' %}\r\n  {{ nothing_2 }}<em>{{ title }}</em>{{ aggregated_field_published }}\r\n{% elseif type_1|striptags == 'chapter' %}\r\n  {{ nothing_2 }}{{ title }}{{ nothing_1 }} {{ field_publication_year_text_1 }}, s. {{ field_pagination_from }}{{second}}.\r\n{% elseif type_1|striptags == 'book_series' %}\r\n  <em>{{ title }}</em>{{ field_publication_year_from }}–{{ field_publication_year_to }}\r\n{% elseif type_1|striptags == 'issue' %}\r\n  <em>{{ title }}</em>\r\n{% endif %}"

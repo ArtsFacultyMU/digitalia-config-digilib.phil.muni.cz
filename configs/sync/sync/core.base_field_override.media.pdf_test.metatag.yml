@@ -1,0 +1,18 @@
+uuid: 6e8fc0d3-3cec-4e8c-bbe8-681aaaa86ff5
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.pdf_test
+id: media.pdf_test.metatag
+field_name: metatag
+entity_type: media
+bundle: pdf_test
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

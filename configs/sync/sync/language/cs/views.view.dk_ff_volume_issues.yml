@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h3>Čísla v tomto ročníku</h3>\r\n"
+            format: basic_html
+      fields:
+        title:
+          alter:
+            text: 'Číslo {{ title }}'
+        field_handle:
+          alter:
+            text: 'Číslo <a href="/cs/handle/11222.digilib/{{ field_handle }}">{{ title }}</a>'

@@ -1,0 +1,35 @@
+uuid: 0256d948-3f19-401c-92d8-72a949089fbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_of
+    - media.type.pdf_test
+    - node.type.article
+    - node.type.book
+    - node.type.book_series
+    - node.type.chapter
+id: media.pdf_test.field_media_of
+field_name: field_media_of
+entity_type: media
+bundle: pdf_test
+label: 'Media of'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      book: book
+      book_series: book_series
+      chapter: chapter
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

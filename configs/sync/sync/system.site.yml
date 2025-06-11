@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
+uuid: 97a8e816-db76-4d5f-9c7d-45ed64847cac
+name: 'Digital Library of the Faculty of Arts Masaryk University'
+mail: digitalia@phil.muni.cz
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

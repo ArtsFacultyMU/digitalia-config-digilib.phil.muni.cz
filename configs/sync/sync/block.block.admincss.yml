@@ -1,0 +1,40 @@
+uuid: eb26082f-cf27-47f3-9670-b7d220073e6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.admin_css
+  module:
+    - context
+    - islandora
+    - simple_block
+  theme:
+    - claro
+id: admincss
+theme: claro
+region: content
+weight: 0
+provider: null
+plugin: 'simple_block:admin_css'
+settings:
+  id: 'simple_block:admin_css'
+  label: 'Admin CSS'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

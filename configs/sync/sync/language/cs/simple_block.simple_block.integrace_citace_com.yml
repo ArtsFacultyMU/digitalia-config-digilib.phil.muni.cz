@@ -1,0 +1,3 @@
+content:
+  value: "<div id=\"com.citacepro.citace\" lang=\"cs\">&nbsp;</div>\r\n<script src=\"https://www.citacepro.com/citace-v-katalogu.js\"></script>"
+  format: full_html

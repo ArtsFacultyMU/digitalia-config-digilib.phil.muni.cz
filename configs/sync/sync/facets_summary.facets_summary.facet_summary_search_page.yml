@@ -1,0 +1,49 @@
+uuid: 24966586-3920-4291-82a8-0c61aa891508
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.dk_ff_content
+    - views.view.dk_ff_search_page
+  module:
+    - search_api
+id: facet_summary_search_page
+name: 'Facet summary (search page)'
+facet_source_id: 'search_api:views_page__dk_ff_search_page__page_1'
+processor_configs:
+  hide_when_no_filters:
+    processor_id: hide_when_no_filters
+    weights:
+      build: '9'
+    settings: {  }
+facets:
+  content_type:
+    checked: true
+    label: 'Content type'
+    separator: ', '
+    show_count: false
+    weight: 0
+  keywords:
+    checked: true
+    label: Keywords
+    separator: ', '
+    show_count: false
+    weight: 0
+  subject_keywords:
+    checked: true
+    label: 'Subject keywords'
+    separator: ', '
+    show_count: false
+    weight: 0
+  subject_phnk:
+    checked: true
+    label: 'Subject PHNK'
+    separator: ', '
+    show_count: false
+    weight: 0
+  type:
+    checked: true
+    label: Type
+    separator: ', '
+    show_count: false
+    weight: 0

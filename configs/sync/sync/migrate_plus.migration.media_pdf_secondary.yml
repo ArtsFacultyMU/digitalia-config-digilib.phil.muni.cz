@@ -1,0 +1,51 @@
+uuid: 8abc2cc0-6613-4a8d-8099-5094a7435553
+langcode: en
+status: true
+dependencies: {  }
+id: media_pdf_secondary
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_media
+label: 'media pdf_secondary'
+source:
+  plugin: csv
+  path: migrate/pdf_secondary.csv
+  delimiter: "\t"
+  header_row_count: 1
+  ids:
+    - filepath
+  constants:
+    use: 'Original File'
+    uid: 1
+    ext: .pdf
+process:
+  name: handle
+  filename:
+    plugin: concat
+    source:
+      - handle
+      - constants/ext
+  uid: constants/uid
+  field_media_document:
+    plugin: migration_lookup
+    source: filepath
+    migration: pdf_secondary
+    no_stub: true
+  field_media_of:
+    plugin: entity_lookup
+    entity_type: node
+    value_key: field_path
+    source: dirpath
+  field_media_use:
+    plugin: entity_lookup
+    source: constants/use
+    entity_type: taxonomy_term
+    value_key: name
+    bundle_key: vid
+    bundle: islandora_media_use
+destination:
+  plugin: 'entity:media'
+  default_bundle: document_secondary
+migration_dependencies: null

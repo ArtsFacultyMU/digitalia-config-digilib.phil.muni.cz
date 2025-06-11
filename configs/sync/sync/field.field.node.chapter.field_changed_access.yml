@@ -1,0 +1,39 @@
+uuid: cd19d847-a870-4d3d-980b-bf08a0361007
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_changed_access
+    - node.type.chapter
+  module:
+    - double_field
+id: node.chapter.field_changed_access
+field_name: field_changed_access
+entity_type: node
+bundle: chapter
+label: 'Changed access'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    label: ''
+    list: false
+    allowed_values: {  }
+    max: null
+    min: null
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    label: ''
+    list: false
+    allowed_values: {  }
+    max: null
+    min: null
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

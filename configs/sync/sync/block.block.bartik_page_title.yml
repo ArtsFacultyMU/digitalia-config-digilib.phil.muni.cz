@@ -1,0 +1,33 @@
+uuid: 88b565b5-f30b-427d-ac4a-328e9d2c934a
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: KH1YVkR0al64YKHJFCNaqrqZbUmp2Lz-XrZSCRQg9p0
+id: bartik_page_title
+theme: bartik
+region: content
+weight: -13
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/user/*\r\n<front>"
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

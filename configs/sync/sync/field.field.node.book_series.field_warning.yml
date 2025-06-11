@@ -1,0 +1,19 @@
+uuid: 399d98a8-69d4-4099-98c0-afe82c0aa8b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_warning
+    - node.type.book_series
+id: node.book_series.field_warning
+field_name: field_warning
+entity_type: node
+bundle: book_series
+label: Warning
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

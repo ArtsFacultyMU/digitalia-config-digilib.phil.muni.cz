@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: _xdYmjLypi0NYRBtpq8FI6wK9FvnqFUcsYR6XsinTPo
+langcode: en
+media_fields: 'document:field_media_document;attachment:field_media_file;audio:field_media_audio_file;document_secondary:field_media_document;ebook:field_media_file;extracted_text:field_media_file;file:field_media_file;fits_technical_metadata:field_media_file;image:field_media_image;pdf_test:field_media_document;video:field_media_video_file'
+reference_fields: 'taxonomy__field_language:language;field_next_series:serial;field_previous_series:serial;field_author:author_name;field_contributor:author_name;field_related_document:document;taxonomy__field_keywords:keyword;field_member_of:issue;field_author_corporate:author_corporate;taxonomy__field_subject_keywords:subject_keywords;taxonomy__field_subject_phnk:subject_phnk;field_member_of:field_member_of;field_member_of:title;field_isbn:text'
+media_delimiter: ;
+reference_delimiter: ^
+double_fields: 'field_title_main:1;field_variant_title:1;field_description:1;field_pagination:1;field_pagination:2;field_book_series:1;field_book_series:2'
+triple_fields: 'field_titles:title'

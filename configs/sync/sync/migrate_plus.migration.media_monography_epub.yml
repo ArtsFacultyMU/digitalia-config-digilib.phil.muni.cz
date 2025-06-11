@@ -1,0 +1,48 @@
+uuid: 28d00c4a-f4b3-4c4f-a596-180ed3a07781
+langcode: en
+status: true
+dependencies: {  }
+id: media_monography_epub
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_media
+label: 'media monography.epub'
+source:
+  plugin: csv
+  path: migrate/files/monography.epub.csv
+  delimiter: "\t"
+  header_row_count: 1
+  ids:
+    - handle
+  constants:
+    uid: 1
+    ext: '-monography.epub'
+process:
+  name:
+    plugin: concat
+    source:
+      - handle
+      - constants/ext
+  filename:
+    plugin: concat
+    source:
+      - handle
+      - constants/ext
+  uid: constants/uid
+  field_media_file:
+    plugin: entity_lookup
+    source: '@filename'
+    entity_type: file
+    value_key: filename
+    bundle: file
+  field_media_of:
+    plugin: entity_lookup
+    source: handle
+    entity_type: node
+    value_key: field_handle
+destination:
+  plugin: 'entity:media'
+  default_bundle: ebook
+migration_dependencies: null

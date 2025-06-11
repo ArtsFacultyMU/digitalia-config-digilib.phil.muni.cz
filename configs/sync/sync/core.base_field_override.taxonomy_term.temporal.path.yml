@@ -1,0 +1,20 @@
+uuid: 8a0de175-434b-43d2-84ce-f2578e642579
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.temporal
+  module:
+    - path
+id: taxonomy_term.temporal.path
+field_name: path
+entity_type: taxonomy_term
+bundle: temporal
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

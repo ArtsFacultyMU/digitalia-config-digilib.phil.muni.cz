@@ -1,0 +1,20 @@
+uuid: 783d793f-7d03-49b4-84f9-c6e5aa4cbb8c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dk_ff_rights
+  module:
+    - text
+id: taxonomy_term.dk_ff_rights.description
+field_name: description
+entity_type: taxonomy_term
+bundle: dk_ff_rights
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

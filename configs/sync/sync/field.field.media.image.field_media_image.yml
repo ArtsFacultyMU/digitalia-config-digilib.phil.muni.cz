@@ -1,0 +1,44 @@
+uuid: 3adc6f2f-f920-49f2-b4dd-cf1ed3adcbcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image
+    - media.type.image
+  module:
+    - image
+  enforced:
+    module:
+      - media
+      - islandora_core_feature
+_core:
+  default_config_hash: idm-WOGrZKncw6SH8HGFJ6IzrgFpS0ifbdaK1x-81SA
+id: media.image.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: image
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: cover
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

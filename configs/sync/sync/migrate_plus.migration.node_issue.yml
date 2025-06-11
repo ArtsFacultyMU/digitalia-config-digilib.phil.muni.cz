@@ -1,0 +1,255 @@
+uuid: 475198a2-1a3d-4db9-999c-06f2acad6071
+langcode: en
+status: true
+dependencies: {  }
+id: node_issue
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_content
+label: 'Import nodes: Issue'
+source:
+  plugin: csv
+  delimiter: "\t"
+  path: migrate/issues.csv
+  header_row_count: 1
+  ids:
+    - path
+  constants:
+    uid: 1
+    cs: cs
+process:
+  langcode: constants/cs
+  status: constants/uid
+  field_issue_name: IssueName
+  field_handle: handle_id
+  uid: constants/uid
+  path_array:
+    plugin: explode
+    delimiter: /
+    source: path
+  first:
+    plugin: extract
+    source: '@path_array'
+    index:
+      - 0
+  second:
+    plugin: extract
+    source: '@path_array'
+    index:
+      - 1
+  third:
+    -
+      plugin: extract
+      source: '@path_array'
+      index:
+        - 2
+    -
+      plugin: explode
+      delimiter: '-'
+    -
+      plugin: extract
+      index:
+        - 0
+  volume:
+    plugin: concat
+    delimiter: /
+    source:
+      - '@first'
+      - '@second'
+      - '@third'
+  field_member_of:
+    plugin: entity_lookup
+    source: '@volume'
+    entity_type: node
+    value_key: field_path
+  field_isbn:
+    plugin: explode
+    delimiter: §|§
+    source: ISBN
+  field_issn:
+    plugin: explode
+    delimiter: §|§
+    source: ISSN
+  field_issue_name_variant:
+    plugin: explode
+    delimiter: §|§
+    source: IssueNameVariant
+  field_page_size/first: PageSizeWidth
+  field_page_size/second: PageSizeHeight
+  field_publication_year_actual: PublYear
+  field_publication_year: Years
+  field_pdf_origin:
+    plugin: entity_generate
+    source: PDFOrigin
+    entity_type: taxonomy_term
+    value_key: name
+    bundle_key: vid
+    bundle: dk_ff_pdf_origin
+  notes:
+    -
+      source: Note§+§lang
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: explode
+      delimiter: §|§
+    -
+      plugin: str_to_assoc
+      key: note
+  field_note:
+    plugin: sub_process
+    source: '@notes'
+    process:
+      exploded:
+        plugin: explode
+        delimiter: §+§
+        source: note
+      first:
+        plugin: extract
+        index:
+          - 0
+        source: '@exploded'
+      second:
+        plugin: extract
+        index:
+          - 1
+        source: '@exploded'
+  field_rights:
+    plugin: entity_lookup
+    source: RightsLicense
+    entity_type: taxonomy_term
+    value_key: field_code
+    bundle_key: vid
+    bundle: dk_ff_rights
+  field_path:
+    plugin: str_replace
+    source: path
+    search: /detail.xml
+    replace: ''
+  field_link_description: LinkToRealDesc
+  field_publication_date:
+    plugin: str_replace
+    source: PublicationDate
+    search: '\'''
+    replace: ''
+  field_embargo_end_date:
+    -
+      plugin: str_replace
+      source: EmbargoEndDate
+      search: '\'''
+      replace: ''
+    -
+      plugin: format_date
+      from_format: Y-m-d
+      to_format: Y-m-d
+  volumeTitle:
+    plugin: entity_value
+    source: '@field_member_of'
+    entity_type: node
+    field_name: title
+  field_temp_serial:
+    -
+      plugin: entity_value
+      source: '@field_member_of'
+      entity_type: node
+      field_name: field_member_of
+  title: IssueName
+  field_virtual:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: LinkToReal
+    -
+      plugin: static_map
+      map:
+        'TRUE': 1
+        'FALSE': 0
+      default_value: 1
+  field_link_to_virtual:
+    plugin: entity_lookup
+    source: LinkToVirtualData
+    entity_type: node
+    value_key: field_path
+  member_of_virtual:
+    plugin: entity_value
+    source: '@field_link_to_virtual'
+    entity_type: node
+    field_name: field_member_of
+  member_of:
+    -
+      plugin: skip_on_empty
+      source: '@field_member_of'
+      method: process
+    -
+      plugin: explode
+      delimiter: $
+  field_member_of_all:
+    -
+      plugin: skip_on_empty
+      source: '@member_of'
+      method: process
+    -
+      plugin: skip_on_empty
+      source: '@member_of_virtual'
+      method: process
+    -
+      plugin: merge
+      source:
+        - '@member_of'
+        - '@member_of_virtual'
+  field_topic:
+    -
+      plugin: explode
+      delimiter: §|§
+      source: Topic
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      value_key: field_id
+      bundle_key: vid
+      bundle: dk_ff_topic
+  field_department_mu:
+    -
+      plugin: explode
+      delimiter: §|§
+      source: 'Department MU'
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      value_key: field_id
+      bundle_key: vid
+      bundle: dk_ff_department_mu
+  issue_titles:
+    -
+      source: IssueTitle
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: explode
+      delimiter: §|§
+    -
+      plugin: str_to_assoc
+      key: title
+  field_issue_title:
+    plugin: sub_process
+    source: '@issue_titles'
+    process:
+      first:
+        plugin: get
+        source: title
+  field_bibtype: BibType
+  field_rights_access:
+    plugin: entity_lookup
+    source: RightsAccess
+    entity_type: taxonomy_term
+    value_key: field_id
+    bundle_key: vid
+    bundle: dk_ff_rights_access
+destination:
+  plugin: 'entity:node'
+  default_bundle: issue
+migration_dependencies:
+  required: {  }
+  optional: {  }

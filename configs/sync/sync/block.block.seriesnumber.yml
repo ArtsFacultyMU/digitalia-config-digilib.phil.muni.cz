@@ -1,0 +1,38 @@
+uuid: 1bacba2c-3bab-430b-87b4-e5b2fb264dac
+langcode: cs
+status: true
+dependencies:
+  config:
+    - facets.facet.series_number
+  module:
+    - facets
+    - islandora
+    - node
+  theme:
+    - islandora_muni
+id: seriesnumber
+theme: islandora_muni
+region: content
+weight: -18
+provider: null
+plugin: 'facet_block:series_number'
+settings:
+  id: 'facet_block:series_number'
+  label: Archive
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: seriesnumber
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      book_series: book_series

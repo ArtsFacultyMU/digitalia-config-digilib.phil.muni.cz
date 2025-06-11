@@ -1,0 +1,26 @@
+langcode: en
+_core:
+  default_config_hash: nNcqzC75Ga_iQShU0PBJRKk48eiw1ArP7A3xAL5Lveg
+button_value: 'Save & Edit'
+button_weight: '-1'
+gin_primary: false
+unpublish: false
+unpublish_new_only: false
+hide_default_save: false
+hide_default_publish: false
+hide_default_preview: true
+hide_default_delete: false
+enable_node_types_automatically: false
+node_types:
+  article: article
+  author: author
+  author_name: author_name
+  book: book
+  book_series: book_series
+  chapter: chapter
+  islandora_object: islandora_object
+  issue: issue
+  page: page
+  references_test: references_test
+  serial: serial
+  volume: volume

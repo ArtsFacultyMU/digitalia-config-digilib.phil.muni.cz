@@ -1,0 +1,37 @@
+uuid: 9e73bcc5-5de5-4116-8cf9-dca3c3ac6a74
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_bibtype
+field_name: field_bibtype
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: book
+      label: Book
+    -
+      value: proceedings
+      label: Proceedings
+    -
+      value: collection
+      label: Collection
+    -
+      value: periodical
+      label: Periodical
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

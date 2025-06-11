@@ -1,0 +1,69 @@
+uuid: 86703cd1-53e2-415f-9834-aa2aa4d48a85
+langcode: en
+status: true
+dependencies: {  }
+id: meta
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dkff_files
+label: 'file meta.xml'
+source:
+  plugin: csv
+  path: migrate/files/meta.xml.csv
+  delimiter: "\t"
+  header_row_count: 1
+  ids:
+    - filepath
+  constants:
+    destination_dir: 'fedora://meta'
+    source_dir: /var/www/html/drupal/web/migrate/data
+    ext: '-meta.xml'
+process:
+  filename_handle:
+    plugin: concat
+    source:
+      - handle
+      - constants/ext
+  filename_alt:
+    -
+      plugin: explode
+      delimiter: /
+      source: filepath
+    -
+      plugin: concat
+      delimiter: _
+    -
+      plugin: ltrim
+      mask: _serial_
+    -
+      plugin: ltrim
+      mask: _monograph_
+  filename:
+    plugin: if_condition
+    source: handle
+    condition: empty
+    do_get: '@filename_alt'
+    else_get: '@filename_handle'
+  destination:
+    plugin: concat
+    delimiter: /
+    source:
+      - constants/destination_dir
+      - '@filename'
+  source:
+    plugin: concat
+    delimiter: /
+    source:
+      - constants/source_dir
+      - filepath
+  uri:
+    plugin: file_copy
+    source:
+      - '@source'
+      - '@destination'
+destination:
+  plugin: 'entity:file'
+  type: file
+migration_dependencies: null

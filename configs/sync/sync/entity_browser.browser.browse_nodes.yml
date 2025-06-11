@@ -1,0 +1,31 @@
+uuid: fe83df62-b5f1-456c-bfa4-262df6bdd4ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_browser
+  module:
+    - views
+name: browse_nodes
+label: 'Browse nodes'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  e753eb6d-91ea-418f-bbae-4731cee048bd:
+    id: view
+    uuid: e753eb6d-91ea-418f-bbae-4731cee048bd
+    label: View
+    weight: 1
+    settings:
+      submit_text: 'Select entities'
+      auto_select: false
+      view: content_browser
+      view_display: entity_browser
