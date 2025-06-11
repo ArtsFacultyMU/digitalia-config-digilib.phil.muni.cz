@@ -1,0 +1,27 @@
+uuid: 5da2a4ea-8d66-4c65-b6a7-66941aa6ef6d
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/split/production
+module:
+  captcha: 0
+  image_captcha: 0
+  memcache: 0
+  memcache_admin: 0
+  recaptcha: 0
+  recaptcha_v3: 0
+  simple_sitemap: 0
+  simple_sitemap_engines: 0
+  simple_sitemap_views: 0
+theme: {  }
+complete_list:
+  - islandora_iiif.settings
+  - openseadragon.settings
+partial_list: {  }
