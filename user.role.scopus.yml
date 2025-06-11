@@ -1,0 +1,14 @@
+uuid: dd569c38-f7e4-47ee-9a71-88d28879bfbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_custom_permissions
+    - file
+id: scopus
+label: SCOPUS
+weight: 4
+is_admin: null
+permissions:
+  - 'access closed documents'
+  - 'delete own files'

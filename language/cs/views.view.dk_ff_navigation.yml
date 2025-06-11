@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_member_of_1:
+          alter:
+            text: "{% if type_2=='volume' %}\r\nRočník {{ field_member_of_1 }}{% elseif type_2=='issue' %}\r\nČíslo {{ field_member_of_1 }}{% else %}\r\n{{ field_member_of_1 }}{% endif %}"
+            path: '/cs/node/{{ field_member_of_1__target_id }}'
+        field_member_of:
+          alter:
+            text: "{% if type_1=='volume' %}\r\nRočník {{ field_member_of }}{% elseif type_1=='issue' %}\r\nČíslo {{ field_member_of }}{% else %}\r\n{{ field_member_of }}{% endif %}"
+            path: '/cs/node/{{ field_member_of__target_id }}'
+        title:
+          alter:
+            text: "{% if type=='volume' %}\r\n<a href=\"/cs/node/{{ raw_arguments.nid }}\">Ročník {{ title }}</a>\r\n{% elseif type=='issue' %}\r\n<a href=\"/cs/node/{{ raw_arguments.nid }}\">Číslo {{ title }}</a>\r\n{% elseif type=='article' or type=='chapter'  %}{% else %}\r\n<a href=\"/cs/node/{{ raw_arguments.nid }}\">{{ title }}</a>\r\n{% endif %}"
+        nothing:
+          alter:
+            text: "<a href='/cs'>Domovská stránka</a>"
+        field_member_of_2:
+          alter:
+            path: '/cs/node/{{ field_member_of_2__target_id }}'

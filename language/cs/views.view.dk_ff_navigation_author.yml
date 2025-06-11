@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<a href='/cs/'>Domovská stránka</a> > <a href='/cs/authors'>Autoři</a> >"

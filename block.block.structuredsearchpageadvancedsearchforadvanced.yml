@@ -1,0 +1,43 @@
+uuid: aaabbf5f-8913-45ae-86ff-644bebcf1627
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - islandora
+  theme:
+    - bartik
+id: structuredsearchpageadvancedsearchforadvanced
+theme: bartik
+region: content
+weight: -9
+provider: null
+plugin: 'islandora_advanced_search_block:dk_ff_structured_search_page__page_2'
+settings:
+  id: 'islandora_advanced_search_block:dk_ff_structured_search_page__page_2'
+  label: ' Structured search page: Advanced Search for Advanced'
+  label_display: '0'
+  provider: islandora_advanced_search
+  fields:
+    - title
+    - title_1
+    - rendered_item_metadata
+    - rendered_item_text
+    - type
+    - keywords_name
+    - language_name
+    - aggregated_field_issn_isbn
+    - aggregated_field_published
+    - aggregated_field_published_to
+  context_filter: null
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-dk_ff_structured_search_page-page_2: view-dk_ff_structured_search_page-page_2

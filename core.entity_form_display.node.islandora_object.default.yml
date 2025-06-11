@@ -1,0 +1,137 @@
+uuid: b2ac406e-e8c7-45c0-bee6-177fff8ed864
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.islandora_object.field_alternative_title
+    - field.field.node.islandora_object.field_classification
+    - field.field.node.islandora_object.field_coordinates
+    - field.field.node.islandora_object.field_coordinates_text
+    - field.field.node.islandora_object.field_dewey_classification
+    - field.field.node.islandora_object.field_display_hints
+    - field.field.node.islandora_object.field_edition
+    - field.field.node.islandora_object.field_edtf_date
+    - field.field.node.islandora_object.field_edtf_date_created
+    - field.field.node.islandora_object.field_edtf_date_issued
+    - field.field.node.islandora_object.field_extent
+    - field.field.node.islandora_object.field_genre
+    - field.field.node.islandora_object.field_geographic_subject
+    - field.field.node.islandora_object.field_identifier
+    - field.field.node.islandora_object.field_isbn
+    - field.field.node.islandora_object.field_language
+    - field.field.node.islandora_object.field_lcc_classification
+    - field.field.node.islandora_object.field_linked_agent
+    - field.field.node.islandora_object.field_local_identifier
+    - field.field.node.islandora_object.field_member_of
+    - field.field.node.islandora_object.field_model
+    - field.field.node.islandora_object.field_oclc_number
+    - field.field.node.islandora_object.field_physical_form
+    - field.field.node.islandora_object.field_pid
+    - field.field.node.islandora_object.field_place_published
+    - field.field.node.islandora_object.field_resource_type
+    - field.field.node.islandora_object.field_rights
+    - field.field.node.islandora_object.field_subject
+    - field.field.node.islandora_object.field_subjects_name
+    - field.field.node.islandora_object.field_table_of_contents
+    - field.field.node.islandora_object.field_temporal_subject
+    - field.field.node.islandora_object.field_weight
+    - node.type.islandora_object
+  module:
+    - field_group
+  enforced:
+    module: {  }
+third_party_settings:
+  field_group:
+    group_structure:
+      children:
+        - field_model
+        - field_member_of
+        - langcode
+        - field_display_hints
+        - field_pid
+        - field_weight
+      label: System
+      region: hidden
+      parent_name: ''
+      weight: 27
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: true
+        required_fields: true
+    group_descriptive:
+      children:
+        - title
+        - field_rights
+      label: General
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: true
+        required_fields: true
+_core:
+  default_config_hash: TZj2IxHyiI7nRUDO0hZueyq2QCE7tDSqfprGCEFu4Rs
+id: node.islandora_object.default
+targetEntityType: node
+bundle: islandora_object
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_alternative_title: true
+  field_classification: true
+  field_coordinates: true
+  field_coordinates_text: true
+  field_dewey_classification: true
+  field_display_hints: true
+  field_edition: true
+  field_edtf_date: true
+  field_edtf_date_created: true
+  field_edtf_date_issued: true
+  field_extent: true
+  field_genre: true
+  field_geographic_subject: true
+  field_identifier: true
+  field_isbn: true
+  field_language: true
+  field_lcc_classification: true
+  field_linked_agent: true
+  field_local_identifier: true
+  field_member_of: true
+  field_model: true
+  field_oclc_number: true
+  field_physical_form: true
+  field_pid: true
+  field_place_published: true
+  field_resource_type: true
+  field_rights: true
+  field_subject: true
+  field_subjects_name: true
+  field_table_of_contents: true
+  field_temporal_subject: true
+  field_weight: true
+  langcode: true
+  path: true
+  promote: true
+  published_at: true
+  status: true
+  sticky: true
+  uid: true

@@ -1,0 +1,36 @@
+uuid: ca01ce3f-e13a-4d89-9c92-9e306773bd84
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.topic
+  module:
+    - context
+    - facets
+    - islandora
+  theme:
+    - islandora_muni
+id: islandora_muni_topic
+theme: islandora_muni
+region: sidebar_first
+weight: -21
+provider: null
+plugin: 'facet_block:topic'
+settings:
+  id: 'facet_block:topic'
+  label: Topic
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: islandora_muni_topic
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-dk_ff_search_page-page_1: view-dk_ff_search_page-page_1
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

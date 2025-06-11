@@ -1,0 +1,35 @@
+uuid: 8b8d12c1-f842-45cb-b497-a37ccfd7d559
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.search_page_facet_summary
+  module:
+    - context
+    - facets_summary
+    - islandora
+  theme:
+    - islandora_muni
+id: searchpagefacetsummary
+theme: islandora_muni
+region: sidebar_first
+weight: -25
+provider: null
+plugin: 'facets_summary_block:search_page_facet_summary'
+settings:
+  id: 'facets_summary_block:search_page_facet_summary'
+  label: 'Applied filters'
+  label_display: visible
+  provider: facets_summary
+  context_mapping: {  }
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-dk_ff_search_page-page_1: view-dk_ff_search_page-page_1
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

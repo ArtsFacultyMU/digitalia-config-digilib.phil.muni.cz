@@ -1,0 +1,29 @@
+uuid: 761c22d7-d476-4aa4-b216-4c06edcb5467
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_of
+    - node.type.issue
+    - node.type.references_test
+id: node.references_test.field_member_of
+field_name: field_member_of
+entity_type: node
+bundle: references_test
+label: 'Member of'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      issue: issue
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

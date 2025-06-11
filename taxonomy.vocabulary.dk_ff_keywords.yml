@@ -1,0 +1,9 @@
+uuid: f65320d2-6903-43a0-80f7-c10456f65276
+langcode: en
+status: true
+dependencies: {  }
+name: 'DK FF: Keywords'
+vid: dk_ff_keywords
+description: null
+weight: 0
+new_revision: false

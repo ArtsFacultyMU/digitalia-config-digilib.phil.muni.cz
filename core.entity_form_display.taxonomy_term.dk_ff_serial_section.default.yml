@@ -1,0 +1,56 @@
+uuid: d34016ee-c990-4c66-8f3f-25aa0bbfd260
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.dk_ff_serial_section.field_section_languages
+    - taxonomy.vocabulary.dk_ff_serial_section
+  module:
+    - double_field
+id: taxonomy_term.dk_ff_serial_section.default
+targetEntityType: taxonomy_term
+bundle: dk_ff_serial_section
+mode: default
+content:
+  field_section_languages:
+    type: double_field
+    weight: 1
+    region: content
+    settings:
+      first:
+        type: textfield
+        label_display: block
+        size: 70
+        placeholder: ''
+        label: Ok
+        cols: 10
+        rows: 5
+      second:
+        type: select
+        label_display: block
+        size: 30
+        placeholder: ''
+        label: Ok
+        cols: 10
+        rows: 5
+      inline: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

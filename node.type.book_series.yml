@@ -1,0 +1,17 @@
+uuid: 70077373-03d4-41c0-ae6d-4426b356d852
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Book series'
+type: book_series
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

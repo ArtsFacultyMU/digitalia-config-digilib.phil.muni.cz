@@ -1,0 +1,32 @@
+uuid: 7b331625-b860-4954-9044-e3d35707c7ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - double_field
+    - taxonomy
+id: taxonomy_term.field_section_languages
+field_name: field_section_languages
+entity_type: taxonomy_term
+type: double_field
+settings:
+  storage:
+    first:
+      type: string
+      maxlength: 255
+      precision: 10
+      scale: 2
+      datetime_type: datetime
+    second:
+      type: string
+      maxlength: 255
+      precision: 10
+      scale: 2
+      datetime_type: datetime
+module: double_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

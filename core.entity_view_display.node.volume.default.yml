@@ -1,0 +1,127 @@
+uuid: dd15013c-a54e-4544-bd6b-4ecdba3f71b3
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.field.node.volume.field_handle
+    - field.field.node.volume.field_member_of
+    - field.field.node.volume.field_member_of_all
+    - field.field.node.volume.field_note
+    - field.field.node.volume.field_path
+    - field.field.node.volume.field_virtual
+    - field.field.node.volume.field_years
+    - node.type.volume
+  module:
+    - double_field
+    - user
+id: node.volume.default
+targetEntityType: node
+bundle: volume
+mode: default
+content:
+  display_media_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_thumbnail:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  dk_ff_eva_link_to_contextual_search_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  dk_ff_eva_title_entity_view_3:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  dk_ff_media_evas_volume_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  dk_ff_volume_issues_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_note:
+    type: double_field_unformatted_list
+    label: inline
+    settings:
+      first:
+        format_type: medium
+        link: false
+        hidden: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      second:
+        format_type: medium
+        link: false
+        hidden: true
+        key: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      inline: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_years:
+    type: double_field_unformatted_list
+    label: inline
+    settings:
+      first:
+        format_type: medium
+        link: false
+        hidden: false
+        key: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      second:
+        format_type: medium
+        link: false
+        hidden: false
+        key: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      inline: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  dk_ff_eva_identifiers_entity_view_1: true
+  dk_ff_eva_link_to_real_entity_view_1: true
+  field_handle: true
+  field_member_of: true
+  field_member_of_all: true
+  field_path: true
+  field_virtual: true
+  langcode: true
+  openseadragon_media_evas_entity_view_2: true
+  openseadragon_media_evas_service_file: true
+  pdfjs_media_evas_entity_view_1: true
+  published_at: true
+  search_api_excerpt: true
