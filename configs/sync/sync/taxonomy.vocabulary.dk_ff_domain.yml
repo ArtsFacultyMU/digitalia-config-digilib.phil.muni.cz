@@ -1,9 +1,0 @@
-uuid: 4058c734-77e8-4405-b7e9-7da190c9de2f
-langcode: en
-status: true
-dependencies: {  }
-name: 'DK FF: Domain'
-vid: dk_ff_domain
-description: null
-weight: 0
-new_revision: false

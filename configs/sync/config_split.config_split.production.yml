@@ -22,6 +22,7 @@ module:
   simple_sitemap_views: 0
 theme: {  }
 complete_list:
+  - core.extension
   - islandora_iiif.settings
   - openseadragon.settings
 partial_list: {  }

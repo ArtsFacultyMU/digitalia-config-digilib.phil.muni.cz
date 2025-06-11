@@ -1,6 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        field_sysno:
-          label: 'Odkaz do knihovního katalogu MU'

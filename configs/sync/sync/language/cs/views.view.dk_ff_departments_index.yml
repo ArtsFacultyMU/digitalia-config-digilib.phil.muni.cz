@@ -1,8 +1,0 @@
-display:
-  default:
-    display_options:
-      title: Ústavy
-  page_1:
-    display_options:
-      menu:
-        title: Ústavy

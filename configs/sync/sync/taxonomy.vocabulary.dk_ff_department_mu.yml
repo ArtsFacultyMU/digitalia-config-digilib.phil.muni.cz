@@ -1,9 +1,0 @@
-uuid: 77af7d33-306d-4658-acf4-089cb84678b2
-langcode: en
-status: true
-dependencies: {  }
-name: 'DK FF: Department MU'
-vid: dk_ff_department_mu
-description: null
-weight: 0
-new_revision: false

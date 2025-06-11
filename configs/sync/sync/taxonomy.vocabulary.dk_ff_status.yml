@@ -1,9 +1,0 @@
-uuid: 0fd84f4a-5cd4-42c7-82d4-713454343cac
-langcode: en
-status: true
-dependencies: {  }
-name: 'DK FF: Status'
-vid: dk_ff_status
-description: null
-weight: 0
-new_revision: false

@@ -1,9 +1,0 @@
-uuid: 894ed538-4e64-4d21-8e53-bf94b84c59b2
-langcode: en
-status: true
-dependencies: {  }
-name: 'DK FF: Subject PHNK'
-vid: dk_ff_subject_phnk
-description: null
-weight: 0
-new_revision: false

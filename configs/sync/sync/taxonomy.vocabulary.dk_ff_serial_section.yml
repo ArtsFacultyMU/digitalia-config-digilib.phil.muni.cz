@@ -1,9 +1,0 @@
-uuid: 82be205c-be04-437b-bab7-8bef8d9ddec0
-langcode: und
-status: true
-dependencies: {  }
-name: 'DK FF: Serial section'
-vid: dk_ff_serial_section
-description: null
-weight: 0
-new_revision: false
