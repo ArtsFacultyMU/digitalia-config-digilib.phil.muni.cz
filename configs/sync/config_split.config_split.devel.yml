@@ -1,0 +1,17 @@
+uuid: 3a9c5a1a-0226-409e-ac98-609531d1a7d9
+langcode: en
+status: true
+dependencies: {  }
+id: devel
+label: Devel
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/split/devel
+module: {  }
+theme: {  }
+complete_list:
+  - core.extension
+partial_list: {  }
