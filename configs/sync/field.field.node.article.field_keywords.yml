@@ -26,7 +26,7 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: 1
+    auto_create: true
     auto_create_bundle: ''
   rel_types:
     cze: Czech
