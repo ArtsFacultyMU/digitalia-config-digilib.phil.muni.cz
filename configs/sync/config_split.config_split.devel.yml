@@ -10,7 +10,10 @@ stackable: false
 no_patching: false
 storage: folder
 folder: ../config/split/devel
-module: {  }
+module:
+  devel: 0
+  devel_generate: 0
+  devel_kint_extras: 0
 theme: {  }
 complete_list:
   - core.extension

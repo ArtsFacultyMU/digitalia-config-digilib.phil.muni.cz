@@ -16,7 +16,6 @@ module:
   config: 0
   config_split: 0
   config_translation: 0
-  config_update: 0
   contact: 0
   content_browser: 0
   context: 0
@@ -69,14 +68,11 @@ module:
   entity_browser: 0
   entity_browser_entity_form: 0
   entity_embed: 0
-  entity_reference_revisions: 0
   eva: 0
   facet_range_list_item: 0
   facets: 0
   facets_summary: 0
   fancy_file_delete: 0
-  features: 0
-  features_ui: 0
   field: 0
   field_group: 0
   field_permissions: 0
@@ -159,7 +155,6 @@ module:
   phpass: 0
   prepopulate: 0
   queue_ui: 0
-  quickedit: 0
   rdf: 0
   responsive_image: 0
   rest: 0
@@ -177,7 +172,6 @@ module:
   serialization: 0
   shortcut: 0
   simple_block: 0
-  structure_sync: 0
   superfish: 0
   syslog: 0
   system: 0
