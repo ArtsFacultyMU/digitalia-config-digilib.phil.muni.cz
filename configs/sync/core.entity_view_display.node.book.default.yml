@@ -82,8 +82,8 @@ third_party_settings:
         formatter: closed
     group_fulltext:
       children:
-        - dk_ff_pdf_media_evas_download_link_entity_view_1
         - dk_ff_pdf_media_evas_download_ebook_entity_view_1
+        - dk_ff_pdf_media_evas_download_link_entity_view_1
         - dk_ff_pdf_media_evas_feedback_entity_view_1
       label: Fulltext
       parent_name: ''
@@ -190,6 +190,21 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  dk_ff_pdf_media_evas_download_ebook_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  dk_ff_pdf_media_evas_download_link_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  dk_ff_pdf_media_evas_feedback_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
   field_book_series:
     type: double_field_html_list

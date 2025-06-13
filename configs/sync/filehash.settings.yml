@@ -21,4 +21,8 @@ algos:
   sha3_512: '0'
 dedupe: 0
 rehash: true
+original: false
+dedupe_original: false
+mime_types: {  }
 autohash: true
+suppress_warnings: false

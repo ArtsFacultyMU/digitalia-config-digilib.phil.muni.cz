@@ -127,9 +127,9 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: '10'
-      size: '60'
+      size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
   field_department_mu:
     type: multiple_options_select
@@ -405,9 +405,9 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
   field_subject_phnk:
     type: typed_relation_default
@@ -415,9 +415,9 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
   field_sysno:
     type: string_textfield
@@ -540,6 +540,11 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox

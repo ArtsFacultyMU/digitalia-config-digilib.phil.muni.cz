@@ -60,9 +60,9 @@ bundle: book
 mode: extracted_text
 content:
   digitalia_muni_eva_citations_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   display_media_entity_view_1:
     settings: {  }
@@ -85,9 +85,9 @@ content:
     weight: 6
     region: content
   dk_ff_eva_link_to_contextual_search_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   dk_ff_eva_pdf_extracted_text_entity_view_1:
     settings: {  }
@@ -105,14 +105,19 @@ content:
     weight: 10
     region: content
   dk_ff_eva_title_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   dk_ff_eva_variant_titles_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
+    region: content
+  dk_ff_pdf_media_evas_feedback_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
   pdfjs_media_evas_entity_view_2:
     settings: {  }
