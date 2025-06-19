@@ -70,6 +70,7 @@ module:
   entity_browser_entity_form: 0
   entity_embed: 0
   eva: 0
+  facet_range_list_item: 0
   facets: 0
   facets_summary: 0
   fancy_file_delete: 0
